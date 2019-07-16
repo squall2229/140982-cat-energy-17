@@ -1,6 +1,7 @@
 @import "normalize";
 @import "variables";
 @import "fonts";
+@import "mixins";
 
 // global
 @import "blocks/visually-hidden";
@@ -15,6 +16,9 @@
 // programs
 @import "blocks/programs";
 @import "blocks/plan";
+
+// guide
+@import "blocks/guide";
 
 body {
   margin: 0;
