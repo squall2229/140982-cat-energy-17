@@ -1,3 +1,40 @@
+@import "normalize";
+@import "variables";
+@import "fonts";
+
+// global
+@import "blocks/visually-hidden";
+@import "blocks/title";
+@import "blocks/container";
+@import "blocks/button";
+
+// header
+@import "blocks/header";
+@import "blocks/main-nav";
+
+// programs
+@import "blocks/programs";
+
 body {
-  background-color: red;
+  margin: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 300;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }

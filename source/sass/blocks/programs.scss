@@ -1,0 +1,41 @@
+.programs__header {
+  position: relative;
+}
+
+.programs__title-container {
+  padding-top: 29px;
+  padding-bottom: 164px;
+  margin-bottom: 135px;
+
+  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.programs__title {
+  margin-top: 0;
+  margin-bottom: 19px;
+
+  line-height: 1;
+  text-align: center;
+  color: #fff;
+  font-weight: inherit;
+}
+
+.programs__intro {
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: inherit;
+  text-transform: uppercase;
+}
+
+.programs__image {
+  position: absolute;
+  top: 167px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: block;
+  margin-bottom: 3px;
+}

@@ -1,0 +1,26 @@
+.button {
+  display: block;
+  width: 280px;
+  padding-top: 9px;
+  padding-bottom: 10px;
+
+  font-family: inherit;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: $primary_green;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: #5eaa2f;
+  }
+}
