@@ -24,11 +24,7 @@
   min-height: 60px;
   padding-left: 80px;
 
-  font-family: "Arial", "Helvetica", sans-serif;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 18px;
-  color: $primary_text;
+  @include paragraph;
 
   &:last-child {
     margin-bottom: 0;
@@ -69,4 +65,6 @@
 
 .guide__item-text {
   margin: 0;
+
+  @include paragraph;
 }

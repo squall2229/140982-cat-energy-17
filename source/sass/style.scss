@@ -25,10 +25,16 @@
 @import "blocks/results";
 @import "blocks/result";
 
+// footer
+@import "blocks/footer";
+@import "blocks/contacts";
+@import "blocks/map";
+@import "blocks/social";
+@import "blocks/copyright";
 body {
   margin: 0;
 
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
   font-weight: 300;
   color: $primary_text;
   font-size: 14px;

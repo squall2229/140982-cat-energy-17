@@ -1,97 +1,197 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>HTML Academy: Кэт энерджи | Подбор программы</title>
   </head>
   <body>
     <!-- Header -->
     <header class="header">
       <a class="header__logo" href="/">
-        <img class="header__logo-image" src="http://placehold.it/191x39" alt="Cat Energy логотип">
+        <img
+          class="header__logo-image"
+          src="http://placehold.it/191x39"
+          alt="Cat Energy логотип"
+        />
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list menu">
-          <li class="menu__item"><a class="menu__link" href='index.html'>Главная</a></li>
-          <li class="menu__item"><a class="menu__link" href='catalog.html'>Каталог продукции</a></li>
-          <li class="menu__item"><a class="menu__link" href='form.html'>Подбор программы</a></li>
+          <li class="menu__item">
+            <a class="menu__link" href="index.html">Главная</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="form.html">Подбор программы</a>
+          </li>
         </ul>
       </nav>
     </header>
     <!-- Main -->
     <main class="main">
-      <section class='selection'>
-        <h1 class='selection__title title'>Подбор программы</h1>
-        <p class="selection__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
-        <form class="selection__form signup-form" name="signup-form" method="post" action="https://echo.htmlacademy.ru">
+      <section class="selection">
+        <h1 class="selection__title title">Подбор программы</h1>
+        <p class="selection__description">
+          Заполните анкету и мы подберем программу питания для вашего кота
+        </p>
+        <form
+          class="selection__form signup-form"
+          name="signup-form"
+          method="post"
+          action="https://echo.htmlacademy.ru"
+        >
           <fieldset class="signup-form__group-fields group-fields">
-            <legend class="group-fields__title visually-hidden">Основная информация</legend>
+            <legend class="group-fields__title visually-hidden">
+              Основная информация
+            </legend>
             <div class="group-fields__field field">
               <label class="field__label" for="name">Имя:*</label>
-              <input class="field__input" name="name" type="text" id="name" placeholder="Барсик">
+              <input
+                class="field__input"
+                name="name"
+                type="text"
+                id="name"
+                placeholder="Барсик"
+              />
             </div>
             <div class="group-fields__field field">
               <label class="field__label" for="weight">Вес (кг):*</label>
-              <input class="field__input" name="weight" type="text" id="weight" placeholder="7">
+              <input
+                class="field__input"
+                name="weight"
+                type="text"
+                id="weight"
+                placeholder="7"
+              />
             </div>
             <div class="group-fields__field field">
               <label class="field__label" for="age">Возраст (лет):</label>
-              <input class="field__input" name="age" type="text" id="age" placeholder="7">
+              <input
+                class="field__input"
+                name="age"
+                type="text"
+                id="age"
+                placeholder="7"
+              />
             </div>
           </fieldset>
           <fieldset class="signup-form__group-fields group-fields">
-            <legend class="group-fields__title visually-hidden">Выбор программы</legend>
+            <legend class="group-fields__title visually-hidden">
+              Выбор программы
+            </legend>
             <div class="group-fields__field field">
-              <input class="field__radio" name="program-types" type="radio" id="slimming">
+              <input
+                class="field__radio"
+                name="program-types"
+                type="radio"
+                id="slimming"
+              />
               <label class="field__label" for="slimming">Похудение</label>
             </div>
             <div class="group-fields__field field">
-              <input class="field__radio" name="program-types" type="radio" id="gain-weight">
+              <input
+                class="field__radio"
+                name="program-types"
+                type="radio"
+                id="gain-weight"
+              />
               <label class="field__label" for="gain-weight">Набор массы</label>
             </div>
             <div class="group-fields__field field">
-              <input class="field__radio" name="program-types" type="radio" id="not-know" >
-              <label class="field__label" for="not-know">Не знаю (Нужен ваш совет)</label>
+              <input
+                class="field__radio"
+                name="program-types"
+                type="radio"
+                id="not-know"
+              />
+              <label class="field__label" for="not-know"
+                >Не знаю (Нужен ваш совет)</label
+              >
             </div>
           </fieldset>
           <fieldset class="signup-form__group-fields group-fields">
-            <legend class="group-fields__title">Контактные данные (владельца кота)</legend>
+            <legend class="group-fields__title">
+              Контактные данные (владельца кота)
+            </legend>
             <div class="group-fields__field field">
               <label class="field__label" for="email">E-mail:*</label>
-              <input class="field__input" name="email" type="email" id="email" placeholder="kuklachev@gmail.com">
+              <input
+                class="field__input"
+                name="email"
+                type="email"
+                id="email"
+                placeholder="kuklachev@gmail.com"
+              />
             </div>
             <div class="group-fields__field field">
               <label class="field__label" for="phone">Телефон:*</label>
-              <input class="field__input" name="phone" type="text" id="phone" placeholder="8 (960) 900-60-90">
+              <input
+                class="field__input"
+                name="phone"
+                type="text"
+                id="phone"
+                placeholder="8 (960) 900-60-90"
+              />
             </div>
           </fieldset>
           <fieldset class="signup-form__group-fields group-fields">
             <legend class="group-fields__title">Комментарий</legend>
             <div class="group-fields__field field">
-              <textarea class="field__textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
+              <textarea
+                class="field__textarea"
+                placeholder="Расскажите обо всех повадках кота"
+              ></textarea>
             </div>
           </fieldset>
           <fieldset class="signup-form__group-fields group-fields">
             <legend class="group-fields__title">Дополнительно</legend>
             <div class="group-fields__field field">
-              <label class="field__label" for="sweetener">Сахарозаменитель</label>
-              <input class="field__checkbox" name="sweetener" type="checkbox" id="sweetener" checked>
+              <label class="field__label" for="sweetener"
+                >Сахарозаменитель</label
+              >
+              <input
+                class="field__checkbox"
+                name="sweetener"
+                type="checkbox"
+                id="sweetener"
+                checked
+              />
             </div>
             <div class="group-fields__field field">
               <label class="field__label" for="water">Питьевая вода</label>
-              <input class="field__checkbox" name="water" type="checkbox" id="water">
+              <input
+                class="field__checkbox"
+                name="water"
+                type="checkbox"
+                id="water"
+              />
             </div>
             <div class="group-fields__field field">
               <label class="field__label" for="milk">Молоко</label>
-              <input class="field__checkbox" name="milk" type="checkbox" id="milk">
+              <input
+                class="field__checkbox"
+                name="milk"
+                type="checkbox"
+                id="milk"
+              />
             </div>
             <div class="group-fields__field field">
               <label class="field__label" for="vitamins">Витамины</label>
-              <input class="field__checkbox" name="vitamins" type="checkbox" id="vitamins">
+              <input
+                class="field__checkbox"
+                name="vitamins"
+                type="checkbox"
+                id="vitamins"
+              />
             </div>
           </fieldset>
-          <input class="signup-form__submit button" type="submit" value="Отправить заявку">
+          <input
+            class="signup-form__submit button"
+            type="submit"
+            value="Отправить заявку"
+          />
           <p class="signup-form__tooltip">* — Обязательные поля</p>
         </form>
       </section>
@@ -103,23 +203,52 @@
         <div class="contacts__address">
           <p class="contacts__intro">Приглашаем к сотрудничеству дилеров!</p>
           <p class="contacts__text">
-            ул. Большая <br>
-            Конюшенная, д. 19/8 <br>
+            ул. Большая <br />
+            Конюшенная, д. 19/8 <br />
             Санкт-Петербург
           </p>
         </div>
         <div class="contacts__map map">
-          <img class='map__image' src="http://placehold.it/320x400" width="320" height="400" alt='Местоположение офиса'>
+          <img
+            class="map__image"
+            src="http://placehold.it/320x400"
+            width="320"
+            height="400"
+            alt="Местоположение офиса"
+          />
         </div>
-        <h2 class="contacts__title main-title"><b>Cat</b> Energy</h2>
+        <h2 class="contacts__title">
+          <img
+            src="img/logo-footer.svg"
+            width="128"
+            height="24"
+            alt="Cat Energy"
+          />
+        </h2>
         <ul class="social__list">
-          <li class="social__item social__item--vkontakte"><a class="social__link" href='#'>Вконтакте</a></li>
-          <li class="social__item social__item--instagram"><a class="social__link" href='#'>Инстаграм</a></li>
-          <li class="social__item social__item--facebook"><a class="social__link" href='#'>Фейсбук</a></li>
+          <li class="social__item social__item--vkontakte">
+            <a class="social__link" href="#">Вконтакте</a>
+          </li>
+          <li class="social__item social__item--instagram">
+            <a class="social__link" href="#">Инстаграм</a>
+          </li>
+          <li class="social__item social__item--facebook">
+            <a class="social__link" href="#">Фейсбук</a>
+          </li>
         </ul>
         <div class="page__footer__copyright copyright">
-          <a class="copyright__link" href='https://htmlacademy.ru/intensive/adaptive'>HTML Academy</a>
-          <img class="copyright__logo" src="http://placehold.it/27x34" width="27" height="34" alt="Логотип HTML Academy">
+          <a
+            class="copyright__link"
+            href="https://htmlacademy.ru/intensive/adaptive"
+            >HTML Academy</a
+          >
+          <img
+            class="copyright__logo"
+            src="http://placehold.it/27x34"
+            width="27"
+            height="34"
+            alt="Логотип HTML Academy"
+          />
         </div>
       </section>
     </footer>
