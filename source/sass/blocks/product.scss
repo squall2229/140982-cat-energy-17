@@ -1,0 +1,38 @@
+.product {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+
+  border-bottom: solid 1px #ededed;
+}
+
+.product__container-info {
+  display: flex;
+  width: 100%;
+}
+
+.product__title {
+  @include strongText;
+
+  margin: 0;
+  padding-top: 25px;
+  max-width: 72px;
+  margin-bottom: 16px;
+}
+
+.product__info {
+  width: 100%;
+}
+
+.product__params {
+  width: 100%;
+
+  font-size: 12px;
+  font-family: "Arial", "Helvetica", sans-serif;
+  line-height: 12px;
+  color: #444444;
+}
+
+.product__param-value {
+  text-align: right;
+}

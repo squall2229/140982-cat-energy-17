@@ -1,0 +1,44 @@
+.more {
+  position: relative;
+
+  padding-top: 83px;
+  padding-bottom: 26px;
+
+  text-align: center;
+
+  border-bottom: solid 1px #ededed;
+
+  &::after {
+    position: absolute;
+    top: 27px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: block;
+    width: 31px;
+    height: 31px;
+
+    background-image: url("../../img/icon-plus-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+    content: "";
+  }
+}
+
+.more__description {
+  margin: 0;
+  margin-bottom: 11px;
+
+  @include strongText;
+}
+
+.more__small-text {
+  margin: 0;
+  margin-bottom: 22px;
+
+  font-size: 12px;
+  font-weight: 300;
+  font-family: "Arial", "Helvetica", sans-serif;
+  color: #444444;
+}

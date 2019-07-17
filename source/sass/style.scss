@@ -25,12 +25,19 @@
 @import "blocks/results";
 @import "blocks/result";
 
+// catalog
+@import "blocks/catalog";
+@import "blocks/product";
+@import "blocks/more";
+@import "blocks/extra-products";
+
 // footer
 @import "blocks/footer";
 @import "blocks/contacts";
 @import "blocks/map";
 @import "blocks/social";
 @import "blocks/copyright";
+
 body {
   margin: 0;
 

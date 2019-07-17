@@ -19,3 +19,11 @@
   font-weight: 300;
   color: $primary_text;
 }
+
+@mixin strongText {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
