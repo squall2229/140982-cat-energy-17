@@ -1,6 +1,6 @@
 .plan {
   position: relative;
-  
+
   width: 100%;
   padding-left: 21px;
   padding-top: 37px;
@@ -26,7 +26,7 @@
 
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('../../img/icon-cat-slim.svg');
+    background-image: url("../../img/icon-cat-slim.svg");
     content: "";
   }
 
@@ -41,7 +41,7 @@
 
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('../../img/icon-cat-pro.svg');
+    background-image: url("../../img/icon-cat-pro.svg");
     content: "";
   }
 }
@@ -63,13 +63,14 @@
 .plan__description {
   margin: 0;
   padding-bottom: 22px;
-  border-bottom: 1px solid rgba(#000000, 0.1);
 
   font-family: Arial, sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 18px;
-  color: #444444;
+  color: $primary_text;
+
+  border-bottom: 1px solid rgba(#000000, 0.1);
 }
 
 .plan__button {
@@ -87,7 +88,7 @@
   text-transform: uppercase;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     left: calc(100% + 10px);
     top: 50%;
@@ -97,7 +98,7 @@
     width: 25px;
     height: 12px;
 
-    background-image: url('../../img/icon-right-arrow-long.svg');
+    background-image: url("../../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
     background-size: contain;
     transition: width 0.1s linear;
@@ -106,6 +107,6 @@
   &:hover::after {
     width: 32px;
 
-    background-image: url('../../img/icon-right-arrow-verylong.svg');
+    background-image: url("../../img/icon-right-arrow-verylong.svg");
   }
 }

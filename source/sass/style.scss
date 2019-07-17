@@ -20,10 +20,18 @@
 // guide
 @import "blocks/guide";
 
+// example
+@import "blocks/example";
+@import "blocks/results";
+@import "blocks/result";
+
 body {
   margin: 0;
+
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 300;
+  color: $primary_text;
+  font-size: 14px;
 }
 
 img {
