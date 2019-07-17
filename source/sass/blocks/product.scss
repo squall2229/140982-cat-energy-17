@@ -15,9 +15,9 @@
   @include strongText;
 
   margin: 0;
-  padding-top: 25px;
-  max-width: 72px;
-  margin-bottom: 16px;
+  padding-top: 22px;
+  max-width: 74px;
+  margin-bottom: 12px;
 }
 
 .product__info {
@@ -35,4 +35,8 @@
 
 .product__param-value {
   text-align: right;
+}
+
+.product__order {
+  font-size: 16px;
 }

@@ -7,7 +7,11 @@
   display: flex;
   justify-content: space-between;
 
-  background-color: #fff;
+  background-color: #ffffff;
+
+  &--gray {
+    background-color: $primary_gray;
+  }
 }
 
 .contacts__intro {
@@ -32,4 +36,12 @@
   padding-bottom: 31px;
 
   text-transform: uppercase;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
