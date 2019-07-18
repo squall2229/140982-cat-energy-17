@@ -6,7 +6,7 @@
 
   font-family: inherit;
   text-align: center;
-  font-size: 14px;
+  font-size: $primary_font_size;
   line-height: 14px;
   font-weight: 300;
   color: #ffffff;
@@ -15,17 +15,17 @@
   background-color: $primary_green;
 
   &:hover {
-    background-color: #5eaa2f;
+    background-color: $dark_green;
   }
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
 
-    background-color: #5eaa2f;
+    background-color: $dark_green;
   }
 
   &--gray {
-    color: #444444;
+    color: $primary_text;
 
     background-color: $primary_gray;
   }

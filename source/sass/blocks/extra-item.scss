@@ -2,10 +2,10 @@
   padding-top: 11px;
   padding-bottom: 17px;
 
-  border-bottom: 1px solid rgba(#000000, 0.1);
+  border-bottom: 1px solid $dark_gray;
 
   &:first-child {
-    border-top: 1px solid rgba(#000000, 0.1);
+    border-top: 1px solid $dark_gray;
   }
 }
 
@@ -21,15 +21,15 @@
   width: 100%;
   margin-bottom: 10px;
 
-  font-family: "Arial", "Helvetica", sans-serif;
-  font-size: 14px;
+  font-family: $default_font;
+  font-size: $primary_font_size;
   line-height: 14px;
   font-weight: 300;
-  color: #444444;
+  color: $primary_text;
 }
 
 .extra-item__order {
-  font-size: 16px;
+  font-size: $ladge_font_size;
 }
 
 .extra-item__price {

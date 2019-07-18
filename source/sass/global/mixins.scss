@@ -12,19 +12,27 @@
   border-radius: 50%;
 }
 
+@mixin whiteText {
+  color: #ffffff;
+  font-size: $ladge_font_size;
+  line-height: 20px;
+  font-family: $default_font;
+  font-weight: 300;
+}
+
 @mixin paragraph {
-  font-family: "Arial", "Helvetica", sans-serif;
-  font-size: 14px;
+  font-family: $default_font;
+  font-size: $primary_font_size;
   line-height: 18px;
   font-weight: 300;
   color: $primary_text;
 }
 
 @mixin strongText {
-  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
-  font-size: 16px;
+  font-family: $primary_font;
+  font-size: $ladge_font_size;
   font-weight: 300;
   line-height: 20px;
   text-transform: uppercase;
-  color: #111111;
+  color: $black;
 }

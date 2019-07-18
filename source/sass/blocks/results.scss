@@ -15,7 +15,7 @@
   margin-bottom: 41px;
 
   text-align: center;
-  color: #111111;
+  color: $black;
   text-transform: uppercase;
 }
 
@@ -28,9 +28,9 @@
 .results__range-button {
   padding: 0;
 
-  font-size: 16px;
+  font-size: $ladge_font_size;
   font-weight: 300;
-  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
+  font-family: $primary_font;
   text-transform: uppercase;
 
   border: none;
@@ -63,7 +63,7 @@
   margin-right: 18px;
 
   border-radius: 6px;
-  border: solid 1px #cdcdcd;
+  border: solid 1px $medium_gray;
   transition: left 0.2s linear;
 
   &::after {

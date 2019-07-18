@@ -54,7 +54,7 @@
   padding-bottom: 13px;
   margin-bottom: 21px;
 
-  font-size: 24px;
+  font-size: $title_font_size;
   font-family: inherit;
   font-weight: 300;
   text-transform: uppercase;
@@ -64,13 +64,13 @@
   margin: 0;
   padding-bottom: 22px;
 
-  font-family: "Arial", "Helvetica", sans-serif;
-  font-size: 14px;
+  font-family: $default_font;
+  font-size: $primary_font_size;
   font-weight: 300;
   line-height: 18px;
   color: $primary_text;
 
-  border-bottom: 1px solid rgba(#000000, 0.1);
+  border-bottom: 1px solid $dark_gray;
 }
 
 .plan__button {

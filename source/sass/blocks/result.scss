@@ -3,7 +3,7 @@
 
   width: 124px;
 
-  border: solid 1px #cdcdcd;
+  border: solid 1px $medium_gray;
 }
 
 .result__value {
@@ -13,8 +13,8 @@
 
   text-align: center;
   font-weight: 300;
-  color: #111111;
-  font-size: 24px;
+  color: $black;
+  font-size: $title_font_size;
   line-height: 24px;
   text-transform: uppercase;
 }
@@ -29,9 +29,9 @@
   padding-left: 10px;
   padding-right: 10px;
 
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: $default_font;
   font-weight: 300;
-  font-size: 12px;
+  font-size: $small_font_size;
   line-height: 12px;
   text-align: center;
 
