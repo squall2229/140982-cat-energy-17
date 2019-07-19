@@ -36,3 +36,8 @@
   text-transform: uppercase;
   color: $black;
 }
+
+@mixin paddingMobile {
+  padding-left: 20px;
+  padding-right: 20px;
+}

@@ -1,4 +1,6 @@
 .guide {
+  @include paddingMobile;
+
   padding-top: 32px;
   padding-bottom: 42px;
 }

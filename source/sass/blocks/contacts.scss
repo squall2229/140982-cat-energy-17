@@ -1,4 +1,6 @@
 .contacts__address {
+  @include paddingMobile;
+
   position: relative;
   z-index: 1;
 

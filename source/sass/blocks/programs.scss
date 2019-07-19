@@ -3,6 +3,10 @@
   margin-bottom: 22px;
 }
 
+.programs__get-plan-container {
+  @include paddingMobile;
+}
+
 .programs__title-container {
   padding-top: 27px;
   padding-bottom: 167px;
@@ -14,6 +18,8 @@
 }
 
 .programs__title {
+  @include paddingMobile;
+
   margin-top: 0;
   margin-bottom: 24px;
 
@@ -44,6 +50,8 @@
 }
 
 .programs__list {
+  @include paddingMobile;
+
   margin: 0;
 
   list-style-type: none;
