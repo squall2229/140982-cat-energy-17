@@ -1,0 +1,17 @@
+.example {
+  padding-top: 29px;
+  padding-bottom: 39px;
+
+  background-color: $primary_gray;
+}
+
+.example__title {
+  margin-bottom: 33px;
+}
+
+.example__description {
+  margin: 0;
+  margin-bottom: 26px;
+
+  @include paragraph;
+}

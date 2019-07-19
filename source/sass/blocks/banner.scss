@@ -1,0 +1,34 @@
+.banner {
+  @include whiteText;
+
+  position: relative;
+
+  margin: 0;
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 186px;
+  padding-bottom: 43px;
+
+  text-align: center;
+
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-color: $primary_green;
+  background-repeat: no-repeat;
+  background-size: 320px auto;
+  background-position: center;
+
+  &::after {
+    position: absolute;
+    left: 50%;
+    top: 65px;
+    transform: translateX(-50%);
+
+    display: block;
+    width: 56px;
+    height: 61px;
+
+    background-image: url("../img/icon-gift.svg");
+    content: "";
+  }
+}

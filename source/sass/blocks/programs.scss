@@ -1,0 +1,58 @@
+.programs__header {
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.programs__title-container {
+  padding-top: 27px;
+  padding-bottom: 167px;
+  margin-bottom: 135px;
+
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.programs__title {
+  margin-top: 0;
+  margin-bottom: 24px;
+
+  text-align: center;
+  color: #ffffff;
+  font-weight: inherit;
+}
+
+.programs__intro {
+  margin: 0;
+
+  text-align: center;
+  color: #ffffff;
+  line-height: 14px;
+  font-size: $oswald_font_size;
+  font-weight: inherit;
+  text-transform: uppercase;
+}
+
+.programs__image {
+  position: absolute;
+  top: 167px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: block;
+  margin-bottom: 3px;
+}
+
+.programs__list {
+  margin: 0;
+
+  list-style-type: none;
+}
+
+.programs__item {
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

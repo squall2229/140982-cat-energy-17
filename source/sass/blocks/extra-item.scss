@@ -1,0 +1,37 @@
+.extra-item {
+  padding-top: 11px;
+  padding-bottom: 17px;
+
+  border-bottom: 1px solid $dark_gray;
+
+  &:first-child {
+    border-top: 1px solid $dark_gray;
+  }
+}
+
+.extra-item__title {
+  @include strongText;
+
+  margin-bottom: 11px;
+
+  text-align: left;
+}
+
+.extra-item__params {
+  width: 100%;
+  margin-bottom: 10px;
+
+  font-family: $arial_font;
+  font-size: $oswald_font_size;
+  line-height: 14px;
+  font-weight: 300;
+  color: $primary_text;
+}
+
+.extra-item__order {
+  font-size: $large_font_size;
+}
+
+.extra-item__price {
+  text-align: right;
+}

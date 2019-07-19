@@ -1,0 +1,120 @@
+.plan {
+  position: relative;
+
+  width: 100%;
+  padding-left: 21px;
+  padding-top: 37px;
+  padding-right: 20px;
+
+  background-color: $primary_gray;
+
+  &--slim::after,
+  &--pro::after {
+    @include greenCircle;
+
+    content: "";
+  }
+
+  &--slim::before {
+    position: absolute;
+    z-index: 1;
+    top: 22px;
+    left: 30px;
+
+    width: 35px;
+    height: 49px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/icon-cat-slim.svg");
+    content: "";
+  }
+
+  &--pro::before {
+    position: absolute;
+    z-index: 1;
+    top: 35px;
+    left: 13px;
+
+    width: 67px;
+    height: 28px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/icon-cat-pro.svg");
+    content: "";
+  }
+}
+
+.plan__title {
+  position: relative;
+
+  margin: 0;
+  padding-left: 70px;
+  padding-bottom: 13px;
+  margin-bottom: 21px;
+
+  font-size: $title_font_size;
+  font-family: inherit;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.plan__description {
+  margin: 0;
+  padding-bottom: 22px;
+
+  font-family: $arial_font;
+  font-size: $oswald_font_size;
+  font-weight: 300;
+  line-height: 18px;
+  color: $primary_text;
+
+  border-bottom: 1px solid $dark_gray;
+}
+
+.plan__button {
+  @include strongText;
+
+  position: relative;
+
+  display: inline-block;
+  padding-top: 19px;
+  padding-bottom: 20px;
+
+  border: none;
+  background-color: transparent;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: calc(100% + 10px);
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: block;
+    width: 25px;
+    height: 12px;
+
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: width 0.1s linear;
+  }
+
+  &:hover::after {
+    width: 32px;
+
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    &::after {
+      width: 32px;
+
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+    }
+  }
+}

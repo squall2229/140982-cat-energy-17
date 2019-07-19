@@ -1,0 +1,42 @@
+@import "../../node_modules/normalize.css/normalize";
+@import "global/variables";
+@import "global/fonts";
+@import "global/mixins";
+@import "global/global";
+
+// global
+@import "blocks/visually-hidden";
+@import "blocks/title";
+@import "blocks/container";
+@import "blocks/button";
+
+// header
+@import "blocks/header";
+@import "blocks/main-nav";
+
+// programs
+@import "blocks/programs";
+@import "blocks/plan";
+
+// guide
+@import "blocks/guide";
+
+// example
+@import "blocks/example";
+@import "blocks/results";
+@import "blocks/result";
+
+// catalog
+@import "blocks/catalog";
+@import "blocks/product";
+@import "blocks/more";
+@import "blocks/extra-products";
+@import "blocks/extra-item";
+@import "blocks/banner";
+
+// footer
+@import "blocks/footer";
+@import "blocks/contacts";
+@import "blocks/map";
+@import "blocks/social";
+@import "blocks/copyright";

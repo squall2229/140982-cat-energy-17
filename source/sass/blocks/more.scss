@@ -1,0 +1,48 @@
+.more {
+  position: relative;
+
+  padding-top: 79px;
+  padding-bottom: 26px;
+
+  text-align: center;
+
+  border-bottom: solid 1px $light_gray;
+
+  &::after {
+    position: absolute;
+    top: 27px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: block;
+    width: 31px;
+    height: 31px;
+
+    background-image: url("../img/icon-plus-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+    content: "";
+  }
+}
+
+.more__description {
+  margin: 0;
+  margin-bottom: 11px;
+
+  @include strongText;
+}
+
+.more__small-text {
+  margin: 0;
+  margin-bottom: 22px;
+
+  font-size: $small_font_size;
+  font-weight: 300;
+  font-family: $arial_font;
+  color: $primary_text;
+}
+
+.more__order {
+  font-size: $large_font_size;
+}
