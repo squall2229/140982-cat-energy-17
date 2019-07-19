@@ -14,23 +14,23 @@
 
 @mixin whiteText {
   color: #ffffff;
-  font-size: $ladge_font_size;
+  font-size: $large_font_size;
   line-height: 20px;
-  font-family: $default_font;
+  font-family: $arial_font;
   font-weight: 300;
 }
 
 @mixin paragraph {
-  font-family: $default_font;
-  font-size: $primary_font_size;
+  font-family: $arial_font;
+  font-size: $oswald_font_size;
   line-height: 18px;
   font-weight: 300;
   color: $primary_text;
 }
 
 @mixin strongText {
-  font-family: $primary_font;
-  font-size: $ladge_font_size;
+  font-family: $oswald_font;
+  font-size: $large_font_size;
   font-weight: 300;
   line-height: 20px;
   text-transform: uppercase;

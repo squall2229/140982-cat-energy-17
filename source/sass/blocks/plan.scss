@@ -26,7 +26,7 @@
 
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("../../img/icon-cat-slim.svg");
+    background-image: url("../img/icon-cat-slim.svg");
     content: "";
   }
 
@@ -41,7 +41,7 @@
 
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("../../img/icon-cat-pro.svg");
+    background-image: url("../img/icon-cat-pro.svg");
     content: "";
   }
 }
@@ -64,8 +64,8 @@
   margin: 0;
   padding-bottom: 22px;
 
-  font-family: $default_font;
-  font-size: $primary_font_size;
+  font-family: $arial_font;
+  font-size: $oswald_font_size;
   font-weight: 300;
   line-height: 18px;
   color: $primary_text;
@@ -96,7 +96,7 @@
     width: 25px;
     height: 12px;
 
-    background-image: url("../../img/icon-right-arrow-long.svg");
+    background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
     background-size: contain;
     transition: width 0.1s linear;
@@ -105,7 +105,7 @@
   &:hover::after {
     width: 32px;
 
-    background-image: url("../../img/icon-right-arrow-verylong.svg");
+    background-image: url("../img/icon-right-arrow-verylong.svg");
   }
 
   &:active {
@@ -114,7 +114,7 @@
     &::after {
       width: 32px;
 
-      background-image: url("../../img/icon-right-arrow-verylong.svg");
+      background-image: url("../img/icon-right-arrow-verylong.svg");
     }
   }
 }

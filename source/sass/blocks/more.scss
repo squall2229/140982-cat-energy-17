@@ -18,7 +18,7 @@
     width: 31px;
     height: 31px;
 
-    background-image: url("../../img/icon-plus-mobile.svg");
+    background-image: url("../img/icon-plus-mobile.svg");
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.2;
@@ -39,10 +39,10 @@
 
   font-size: $small_font_size;
   font-weight: 300;
-  font-family: $default_font;
+  font-family: $arial_font;
   color: $primary_text;
 }
 
 .more__order {
-  font-size: $ladge_font_size;
+  font-size: $large_font_size;
 }
