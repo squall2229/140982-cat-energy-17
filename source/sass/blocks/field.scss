@@ -44,30 +44,30 @@
   background-repeat: no-repeat;
 
   &--email {
-    background-image: url('../img/icon-mail.svg');
+    background-image: url("../img/icon-mail.svg");
     background-size: 18px 14px;
     background-position: calc(100% - 15px) center;
 
     &:active {
-      background-image: url('../img/icon-mail-active.svg');
+      background-image: url("../img/icon-mail-active.svg");
     }
 
     &:invalid {
-      background-image: url('../img/icon-mail-error.svg');
+      background-image: url("../img/icon-mail-error.svg");
     }
   }
 
   &--phone {
-    background-image: url('../img/icon-phone.svg');
+    background-image: url("../img/icon-phone.svg");
     background-size: 21px 21px;
     background-position: calc(100% - 13px) center;
 
     &:active {
-      background-image: url('../img/icon-phone-active.svg');
+      background-image: url("../img/icon-phone-active.svg");
     }
 
     &:invalid {
-      background-image: url('../img/icon-phone-error.svg');
+      background-image: url("../img/icon-phone-error.svg");
     }
   }
 
@@ -116,9 +116,9 @@
     display: block;
 
     border-radius: 50%;
-    background-image: url('../img/icon-tick.svg');
+    background-image: url("../img/icon-tick.svg");
     opacity: 0;
-    content: '';
+    content: "";
   }
 }
 
@@ -147,7 +147,7 @@
     border-radius: 50%;
     background-color: $primary_green;
     opacity: 0;
-    content: '';
+    content: "";
   }
 }
 
