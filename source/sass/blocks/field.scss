@@ -1,0 +1,27 @@
+.field {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 14px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.field__label {
+  font-size: 16px;
+  line-height: 18px;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.field__input {
+  width: 100%;
+  height: 45px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  border: solid 1px rgba($medium_gray, 0.5);
+}

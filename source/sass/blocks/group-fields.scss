@@ -1,0 +1,9 @@
+.group-fields {
+  border: none;
+}
+
+.group-fields__field {
+  &:first-child {
+    padding-bottom: 23px;
+  }
+}
