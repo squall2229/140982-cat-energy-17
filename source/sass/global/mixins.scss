@@ -41,3 +41,26 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+
+@mixin titleWithGreenElement {
+  font-size: $title_font_size;
+  font-family: inherit;
+  font-weight: 300;
+  color: $black;
+  line-height: 24px;
+
+  &::after {
+    position: absolute;
+
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 53px;
+    height: 3px;
+    display: block;
+    background-color: $primary_green;
+
+    content: "";
+  }
+}

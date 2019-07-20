@@ -1,8 +1,32 @@
 .signup-form__group-fields {
-  margin-bottom: 31px;
+  margin: 0;
+  margin-bottom: 30px;
 
+  &--margin-bottom-23 {
+    margin-bottom: 23px;
+  }
+
+  &--margin-bottom-28 {
+    margin-bottom: 28px;
+  }
 
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.signup-form__submit {
+  margin-bottom: 19px;
+  width: calc(100% - 40px);
+  margin-left: auto;
+  margin-right: auto;
+
+  font-size: 16px;
+}
+
+.signup-form__tooltip {
+  margin: 0;
+
+  font-family: $arial_font;
+  text-align: center;
 }

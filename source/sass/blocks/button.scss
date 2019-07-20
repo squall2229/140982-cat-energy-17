@@ -7,11 +7,11 @@
   font-family: inherit;
   text-align: center;
   font-size: $primary_font_size;
-  line-height: 14px;
   font-weight: 300;
   color: #ffffff;
   text-transform: uppercase;
 
+  border: none;
   background-color: $primary_green;
 
   &:hover {
