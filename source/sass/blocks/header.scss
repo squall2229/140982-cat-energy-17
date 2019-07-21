@@ -1,17 +1,20 @@
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 11px;
-  padding-bottom: 15px;
-  padding-left: 20px;
-  padding-right: 19px;
   width: 100%;
 
   &--border {
     border-bottom: solid 1px $light_gray;
     padding-bottom: 13px;
   }
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 11px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .header__logo {
@@ -22,4 +25,27 @@
   &:active {
     opacity: 0.6;
   }
+}
+
+.header__toggle {
+  position: relative;
+
+  width: 25px;
+  height: 19px;
+  display: block;
+
+  border: none;
+  background-color: #ffffff;
+  background-image: url("../img/icon-mobile-menu.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &--open {
+    background-image: url("../img/icon-close.svg");
+  }
+}
+
+
+@media (min-width: $tablet) {
+  
 }

@@ -9,20 +9,22 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <a class="header__logo" href="index.html">
-        <img
-          class="header__logo-image"
-          src="img/logo-mobile.svg"
-          width="191"
-          height="39"
-          alt="Cat Energy логотип"
-        />
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+      <div class="header__container">
+        <a class="header__logo" href="index.html">
+          <img
+            class="header__logo-image"
+            src="img/logo-mobile.svg"
+            width="191"
+            height="39"
+            alt="Cat Energy логотип"
+          />
+        </a>
+        <button class="header__toggle header__toggle--open" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav__list menu visually-hidden">
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list menu">
           <li class="menu__item">
             <a class="menu__link" href="index.html">Главная</a>
           </li>
