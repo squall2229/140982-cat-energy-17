@@ -48,7 +48,7 @@
           method="post"
           action="https://echo.htmlacademy.ru"
         >
-          <fieldset class="signup-form__group-fields signup-form__group-fields--margin-bottom-23 group-fields">
+          <fieldset class="signup-form__group-fields group-fields">
             <legend class="group-fields__title visually-hidden">
               Основная информация
             </legend>
@@ -77,13 +77,13 @@
               <input
                 class="field__input"
                 name="age"
-                type="text"
+                type="number"
                 id="age"
                 placeholder="7"
               />
             </div>
           </fieldset>
-          <fieldset class="signup-form__group-fields signup-form__group-fields--margin-bottom-28 group-fields group-fields--border group-fields--padding">
+          <fieldset class="signup-form__group-fields group-fields group-fields--border group-fields--with-padding">
             <legend class="group-fields__title visually-hidden">
               Выбор программы
             </legend>
@@ -121,8 +121,8 @@
             </div>
           </fieldset>
           <fieldset class="signup-form__group-fields group-fields">
-            <legend class="group-fields__title group-fields__title--green">
-              Контактные данные (владельца кота)
+            <legend class="group-fields__title-container group-fields__title-container--green">
+              <div class="group-fields__title">Контактные данные (владельца кота)</div>
             </legend>
             <div class="group-fields__field field">
               <label class="field__label field__label--margin-right" for="email">E-mail:*</label>
@@ -146,7 +146,9 @@
             </div>
           </fieldset>
           <fieldset class="signup-form__group-fields group-fields">
-            <legend class="group-fields__title group-fields__title--green">Комментарий</legend>
+            <legend class="group-fields__title-container group-fields__title-container--green">
+              <div class="group-fields__title">Комментарий</div>
+            </legend>
             <div class="group-fields__field field">
               <textarea
                 class="field__textarea"
@@ -155,7 +157,9 @@
             </div>
           </fieldset>
           <fieldset class="signup-form__group-fields group-fields">
-            <legend class="group-fields__title group-fields__title--green">Дополнительно</legend>
+              <legend class="group-fields__title-container group-fields__title-container--green">
+                <div class="group-fields__title">Дополнительно</div>
+            </legend>
             <div class="group-fields__field field">
               <input
                 class="field__checkbox visually-hidden"

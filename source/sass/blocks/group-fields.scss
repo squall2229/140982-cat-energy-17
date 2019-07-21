@@ -1,6 +1,5 @@
 .group-fields {
-  @include paddingMobile;
-
+  padding: 0;
   padding-top: 0;
   padding-bottom: 0;
 
@@ -11,25 +10,42 @@
     border-bottom: solid 1px $light_gray;
   }
 
-  &--padding {
+  &--with-padding {
     padding-top: 18px;
     padding-bottom: 20px;
   }
 }
 
-.group-fields__title {
+.group-fields__title-container {
+  @include paddingMobile;
+  
   margin: 0;
+  margin-bottom: 32px;
   width: 100%;
-  margin-bottom: 33px;
 
   &--green {
-    @include titleWithGreenElement;
-
-    position: relative;
+    @include greenLine;
   }
 }
 
+.group-fields__title {
+  margin: 0;
+  display: inline-block;
+  max-width: 205px;
+  padding-right: 22px;
+
+  font-size: $title_font_size;
+  font-family: inherit;
+  font-weight: 300;
+  color: $black;
+  line-height: 24px;
+
+  background-color: #fff;
+}
+
 .group-fields__field {
+  @include paddingMobile;
+
   &:first-child {
     padding-bottom: 23px;
   }

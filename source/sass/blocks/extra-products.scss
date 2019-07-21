@@ -1,12 +1,29 @@
-.extra-products__title {
-  @include titleWithGreenElement;
-
-  position: relative;
+.extra-products__title-container {
+  @include greenLine;
 
   margin: 0;
   padding-top: 26px;
   padding-bottom: 34px;
   padding-left: 20px;
+
+  &::after {
+    top: calc(50% - 1.5px);
+    transform: translateY(-50%);
+  }
+}
+
+.extra-products__title {
+  margin: 0;
+  display: inline-block;
+  padding-right: 22px;
+
+  font-size: $title_font_size;
+  font-family: inherit;
+  font-weight: 300;
+  color: $black;
+  line-height: 24px;
+
+  background-color: #fff;
 }
 
 .extra-products__list {

@@ -42,25 +42,45 @@
   padding-right: 20px;
 }
 
-@mixin titleWithGreenElement {
-  font-size: $title_font_size;
-  font-family: inherit;
-  font-weight: 300;
-  color: $black;
-  line-height: 24px;
+@mixin inputStates {
+  &:hover {
+    border: solid 1px $medium_gray;
+  }
+
+  &:focus {
+    border: solid 2px $primary_text;
+  }
+
+  &:invalid {
+    border: solid 2px $orange;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+
+  &::placeholder {
+    font-weight: 300;
+    font-family: inherit;
+    color: $primary_text;
+  }
+}
+
+@mixin greenLine {
+  position: relative;
 
   &::after {
     position: absolute;
-
+    z-index: -1;
+    top: 11px;
     right: 0;
-    top: 50%;
-    transform: translateY(-50%);
 
-    width: 53px;
+    width: calc(100% - 20px);
     height: 3px;
     display: block;
     background-color: $primary_green;
 
     content: "";
   }
+
 }
