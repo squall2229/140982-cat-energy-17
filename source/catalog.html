@@ -52,13 +52,16 @@
           <li class="products-list__item">
             <article class="product">
               <div class="product__container-info">
-                <img
-                  class="product__image"
+                <picture class="product__image">
+                  <source media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.png">
+                  <source media="(min-width: 1200px)" srcset="img/chicken-small-desktop@1x.png">
+                  <img
                   src="img/chicken-small-mobile@1x.jpg"
                   width="140"
                   height="144"
                   alt="Питание Cat Energy  PRO 500 г со вкусом курицы"
                 />
+                </picture>
                 <div class="product__info">
                   <h3 class="product__title">Cat Energy PRO 500 г</h3>
                   <table class="product__params">
@@ -266,12 +269,12 @@
               <a class="product__order button" href="#">Заказать</a>
             </article>
           </li>
+          <li class="catalog__more products-list__item more">
+              <p class="more__description">Показать еще 100500 товаров</p>
+              <p class="more__small-text">На самом деле вкусов гораздо больше!</p>
+              <a class="more__order button button--gray" href="#">Показать все</a>
+          </li>
         </ul>
-        <div class="catalog__more more">
-          <p class="more__description">Показать еще 100500 товаров</p>
-          <p class="more__small-text">На самом деле вкусов гораздо больше!</p>
-          <a class="more__order button button--gray" href="#">Показать все</a>
-        </div>
         <div class="catalog__extra-products extra-products">
           <div class="extra-products__title-container">
             <h2 class="extra-products__title">Дополнительные товары</h2>

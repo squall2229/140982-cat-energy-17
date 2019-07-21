@@ -40,3 +40,24 @@
 .product__order {
   font-size: $large_font_size;
 }
+
+@media (min-width: $tablet) {
+  .product {
+    position: relative;
+
+    width: 324px;
+
+    border-bottom: none;
+    background-color: $light_gray;
+  }
+
+  .product__image {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop) {
+  .product {
+    width: 245px;
+  }
+}
