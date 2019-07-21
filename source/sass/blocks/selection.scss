@@ -1,0 +1,22 @@
+.selection {
+  padding-top: 26px;
+  padding-bottom: 32px;
+}
+
+.selection__title {
+  @include paddingMobile;
+
+  margin: 0;
+  margin-bottom: 36px;
+}
+
+.selection__description {
+  @include paddingMobile;
+  margin: 0;
+  margin-bottom: 40px;
+
+  font-size: $primary_font_size;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $black;
+}

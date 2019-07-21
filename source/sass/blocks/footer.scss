@@ -1,3 +1,7 @@
 .footer {
   background-color: $primary_gray;
 }
+
+.footer__copyright {
+  @include paddingMobile;
+}

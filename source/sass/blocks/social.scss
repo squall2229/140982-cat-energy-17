@@ -1,4 +1,6 @@
 .social {
+  @include paddingMobile;
+
   margin: 0;
   display: flex;
   justify-content: center;

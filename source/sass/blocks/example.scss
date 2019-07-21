@@ -5,6 +5,10 @@
   background-color: $primary_gray;
 }
 
+.example__container {
+  @include paddingMobile;
+}
+
 .example__title {
   margin-bottom: 33px;
 }
