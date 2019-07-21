@@ -24,3 +24,37 @@
   text-align: center;
   line-height: 20px;
 }
+
+@media (min-width: $tablet) {
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu__item {
+    border-bottom: none;
+    margin-right: 34px;
+
+    &:first-child {
+      border-top: none;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .menu__link {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .menu__link {
+    font-size: 20px;
+    color: #ffffff;
+  }
+}

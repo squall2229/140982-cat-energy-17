@@ -1,4 +1,4 @@
-.header {
+.header__container {
   width: 100%;
 
   &--border {
@@ -7,14 +7,14 @@
   }
 }
 
-.header__container {
+.header__logo-container {
+  @include paddingMobile;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 11px;
   padding-bottom: 15px;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .header__logo {
@@ -47,5 +47,65 @@
 
 
 @media (min-width: $tablet) {
-  
+  .header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 24px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .header__logo-container {
+    width: 200px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .header__toggle {
+    @include hidden;
+  }
+
+  .header__logo-image {
+    width: 174px;
+    height: 59px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .header {
+    &--absolute {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      
+      width: 100%;
+    }
+  }
+
+  .header__container {
+    padding-top: 53px;
+    max-width: none;
+  }
+
+  .header__logo {
+    width: 203px;
+    height: 60px;
+  }
+}
+
+@media (min-width: $desktop_large) {
+  .header__container {
+    padding-left: 110px;
+    padding-top: 53px;
+    padding-right: 110px;
+    max-width: none;
+  }
+
 }
