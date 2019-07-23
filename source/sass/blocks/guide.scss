@@ -87,6 +87,8 @@
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
+
+    counter-reset: section;
   }
 
   .guide__item {
@@ -98,7 +100,7 @@
     margin-bottom: 36px;
 
     &:last-child {
-      margin-right: 0;
+      margin-bottom: 36px;
     }
 
     &::after {
@@ -107,8 +109,8 @@
       left: 124px;
       z-index: -1;
 
-      counter-increment: section;
       text-transform: uppercase;
+      counter-increment: section;
       content: counter(section);
       font-family: $oswald_font;
       font-size: 281px;
@@ -133,7 +135,7 @@
   }
 }
 
-@media (min-width: $desktop_medium) {
+@media (min-width: $desktop) {
   .guide__list {
     justify-content: space-between;
   }

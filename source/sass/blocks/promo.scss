@@ -109,7 +109,7 @@
     margin-bottom: 80px;
 
     background-image: url("../img/index-background-desktop@1x.jpg");
-    background-size: 55% auto;
+    background-size: 50% auto;
     background-position: right top;
   }
 
@@ -119,6 +119,7 @@
 
   .promo__title-container {
     margin-bottom: 53px;
+    padding-left: 190px;
   }
 
   .promo__title {
@@ -127,26 +128,11 @@
 
   .promo__image {
     top: 142px;
-    transform: none;
-    right: calc(50% + 170px);
-
-    width: 552px;
-    height: 499px;
-  }
-}
-
-@media (min-width: $desktop_large) {
-  .promo {
-    background-size: 50% auto;
-  }
-
-  .promo__title-container {
-    padding-left: 190px;
-  }
-
-  .promo__image {
     left: auto;
     right: 328px;
     transform: none;
+
+    width: 552px;
+    height: 499px;
   }
 }

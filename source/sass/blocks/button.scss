@@ -41,13 +41,13 @@
 
 @media (min-width: $tablet) {
   .button {
-    padding-top: 14px;
-    padding-bottom: 14px;
-    padding-left: 26px;
-    padding-right: 29px;
-    display: inline-block;
-    width: auto;
-
     font-size: 20px;
+
+    &--width-auto {
+      padding-left: 26px;
+      padding-right: 26px;
+      display: inline-block;
+      width: auto;
+    }
   }
 }

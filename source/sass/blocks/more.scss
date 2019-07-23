@@ -1,4 +1,6 @@
 .more {
+  @include paddingMobile;
+
   position: relative;
 
   padding-top: 79px;
@@ -45,4 +47,18 @@
 
 .more__order {
   font-size: $large_font_size;
+}
+
+@media (min-width: $tablet) {
+  .more {
+    width: 324px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: $desktop) {
+  .more {
+    width: 245px;
+  }
 }

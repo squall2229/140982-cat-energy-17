@@ -18,6 +18,8 @@
 }
 
 .header__logo {
+  display: block;
+
   &:hover {
     opacity: 0.8;
   }
@@ -70,9 +72,8 @@
     @include hidden;
   }
 
-  .header__logo-image {
+  .header__logo {
     width: 174px;
-    height: 59px;
   }
 }
 
@@ -88,21 +89,13 @@
   }
 
   .header__container {
+    padding-left: 110px;
     padding-top: 53px;
+    padding-right: 110px;
     max-width: none;
   }
 
   .header__logo {
     width: 203px;
-    height: 60px;
-  }
-}
-
-@media (min-width: $desktop_large) {
-  .header__container {
-    padding-left: 110px;
-    padding-top: 53px;
-    padding-right: 110px;
-    max-width: none;
   }
 }

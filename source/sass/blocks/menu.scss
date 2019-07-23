@@ -23,6 +23,10 @@
   color: $black;
   text-align: center;
   line-height: 20px;
+
+  &--black {
+    color: $black;
+  }
 }
 
 @media (min-width: $tablet) {
@@ -56,5 +60,9 @@
   .menu__link {
     font-size: 20px;
     color: #ffffff;
+
+    &--black {
+      color: $black;
+    }
   }
 }

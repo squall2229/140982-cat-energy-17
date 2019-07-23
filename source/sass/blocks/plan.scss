@@ -149,7 +149,7 @@
       width: 268px;
       height: 113px;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
       background-image: url("../img/icon-cat-pro.svg");
       content: "";
     }
@@ -186,12 +186,42 @@
 
 @media (min-width: $desktop) {
   .plan {
-    width: 470px;
-  }
-}
-
-@media (min-width: $desktop_large) {
-  .plan {
     width: 570px;
+
+    &::after {
+      top: 30px;
+      right: auto;
+      left: 50px;
+
+      width: 100px;
+      height: 100px;
+    }
+
+    &--slim::before {
+      top: 35px;
+      right: auto;
+      left: 64px;
+
+      width: 70px;
+      height: 100px;
+    }
+
+    &--pro::before {
+      top: 35px;
+      right: auto;
+      left: 34px;
+
+      width: 140px;
+      height: 70px;
+    }
+  }
+
+  .plan__title {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    margin-bottom: 70px;
+
+    text-align: center;
   }
 }
