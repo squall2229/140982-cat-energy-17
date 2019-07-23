@@ -12,7 +12,8 @@
 
 // header
 @import "blocks/header";
-@import "blocks/main-nav";
+@import "blocks/menu";
+@import "blocks/promo";
 
 // programs
 @import "blocks/programs";
@@ -33,6 +34,7 @@
 @import "blocks/extra-products";
 @import "blocks/extra-item";
 @import "blocks/banner";
+@import "blocks/products-list";
 
 // form
 @import "blocks/selection";

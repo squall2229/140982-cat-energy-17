@@ -71,3 +71,77 @@
 
   @include paragraph;
 }
+
+@media (min-width: $tablet) {
+  .guide {
+    padding-top: 66px;
+    padding-bottom: 0;
+  }
+
+  .guide__title {
+    margin-bottom: 72px;
+  }
+
+  .guide__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+
+    counter-reset: section;
+  }
+
+  .guide__item {
+    display: block;
+    width: 324px;
+    padding-left: 0;
+    padding-top: 113px;
+    min-height: 281px;
+    margin-bottom: 36px;
+
+    &:last-child {
+      margin-bottom: 36px;
+    }
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 124px;
+      z-index: -1;
+
+      text-transform: uppercase;
+      counter-increment: section;
+      content: counter(section);
+      font-family: $oswald_font;
+      font-size: 281px;
+      line-height: 1;
+      color: $light_gray;
+    }
+
+    &::before {
+      transform: none;
+      top: 0;
+
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  .guide__item-text {
+    max-width: 250px;
+
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: $desktop) {
+  .guide__list {
+    justify-content: space-between;
+  }
+
+  .guide__item {
+    width: 246px;
+    min-height: 230px;
+  }
+}

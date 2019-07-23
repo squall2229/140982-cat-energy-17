@@ -38,3 +38,16 @@
     color: rgba(68, 68, 68, 0.3);
   }
 }
+
+@media (min-width: $tablet) {
+  .button {
+    font-size: 20px;
+
+    &--width-auto {
+      padding-left: 26px;
+      padding-right: 26px;
+      display: inline-block;
+      width: auto;
+    }
+  }
+}
