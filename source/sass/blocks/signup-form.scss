@@ -26,3 +26,13 @@
   font-family: $arial_font;
   text-align: center;
 }
+
+@media (min-width: $tablet) {
+  .signup-form__group-fields {
+    margin-bottom: 70px;
+
+    &:first-child {
+      margin-bottom: 70px;
+    }
+  }
+}
