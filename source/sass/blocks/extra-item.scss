@@ -35,3 +35,50 @@
 .extra-item__price {
   text-align: right;
 }
+
+@media (min-width: $tablet) {
+  .extra-item {
+    padding-top: 28px;
+    padding-bottom: 28px;
+    padding-left: 38px;
+    padding-right: 38px;
+
+    border-left: 1px solid $dark_gray;
+    border-right: 1px solid $dark_gray;
+  }
+
+  .extra-item__params {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .extra-item__count {
+    display: block;
+    margin-right: 52px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .extra-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    border-left: none;
+    border-right: none;
+  }
+
+  .extra-item__title {
+    margin-bottom: 0;
+  }
+
+  .extra-item__params {
+    margin-bottom: 0;
+  }
+}

@@ -92,3 +92,69 @@
     right: 6px;
   }
 }
+
+@media (min-width: $tablet) {
+  .results {
+    @include paddingMobile;
+  }
+
+  .results__info {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 86px;
+  }
+
+  .results__cost {
+    margin-bottom: 0;
+
+    text-align: left;
+    font-size: 20px;
+  }
+
+  .results__list {
+    max-width: none;
+    justify-content: flex-start;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    width: auto;
+  }
+
+  .results__price {
+    margin-top: 11px;
+    display: block;
+  }
+
+  .results__item {
+    margin-right: 42px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .results {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .results__info {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .results__list {
+    margin-bottom: 62px;
+  }
+
+  .results__price {
+    display: inline;
+    margin-left: 64px;
+  }
+}

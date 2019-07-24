@@ -11,10 +11,6 @@
   border-bottom: solid 1px $light_gray;
 }
 
-.catalog__banner {
-  @include paddingMobile;
-}
-
 .catalog__list {
   padding-left: 0;
   margin: 0;
@@ -26,5 +22,17 @@
   .catalog__title {
     margin-bottom: 156px;
     border-bottom: none;
+  }
+
+  .catalog__banner-wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .catalog__banner-wrapper {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
