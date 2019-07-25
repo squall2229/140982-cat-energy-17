@@ -92,5 +92,68 @@
     &--radio {
       margin-bottom: 13px;
     }
+
+    &--extra {
+      margin-bottom: 32px;
+      max-width: 50%;
+
+      &:first-child {
+        padding-bottom: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 32px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .group-fields__field {
+    &--no-margin-bottom {
+      margin-bottom: 0;
+    }
+
+    &--width-desktop {
+      max-width: 500px;
+    }
+
+    &--extra {
+      width: auto;
+      margin-right: 106px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    &:first-child {
+      padding-bottom: 0;
+    }
+  }
+  .group-fields {
+    padding-left: 110px;
+    padding-right: 110px;
+
+    &--border {
+      padding-right: 0;
+      padding-left: 0;
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &--with-padding {
+      padding-bottom: 25px;
+      padding-left: 28px;
+    }
+
+    &--no-main-padding {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &--width-desktop {
+      width: 500px;
+    }
   }
 }

@@ -35,3 +35,11 @@
     line-height: 1.5;
   }
 }
+
+@media (min-width: $desktop) {
+  .selection__description {
+    padding-left: 110px;
+    max-width: 450px;
+    margin-bottom: 69px;
+  }
+}

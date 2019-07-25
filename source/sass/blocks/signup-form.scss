@@ -35,4 +35,74 @@
       margin-bottom: 70px;
     }
   }
+
+  .signup-form__wrapper-extra-product {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 768px;
+  }
+
+  .signup-form__wrapper-submit {
+    padding-left: 70px;
+    padding-right: 70px;
+    display: flex;
+    max-width: 768px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .signup-form__submit {
+    display: inline-block;
+    padding-left: 63px;
+    padding-right: 67px;
+    width: auto;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+
+    font-size: 20px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .signup-form__wrapper-main-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 70px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .signup-form__wrapper-extra-product {
+    max-width: none;
+  }
+
+  .signup-form__group-fields {
+    &:first-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .signup-form__wrapper-contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .signup-form__wrapper-submit {
+    padding-left: 110px;
+    padding-right: 110px;
+    justify-content: flex-start;
+    max-width: none;
+  }
+
+  .signup-form__submit {
+    width: 568px;
+    display: block;
+    margin-left: 0;
+    margin-right: 80px;
+  }
 }
