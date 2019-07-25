@@ -28,7 +28,33 @@
 
 .extra-products__list {
   list-style: none;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0;
 
   margin-bottom: 39px;
+}
+
+@media (min-width: $tablet) {
+  .extra-products__list {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .extra-products__list {
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 80px;
+    width: 100%;
+  }
+
+  .extra-products__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
 }

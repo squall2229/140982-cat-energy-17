@@ -129,42 +129,34 @@
       </section>
       <!-- Example -->
       <section class="example">
-        <div class="example__container">
-          <h2 class="example__title title">Живой пример</h2>
+        <h2 class="example__title title">Живой пример</h2>
+        <div class="example__wrapper">
           <p class="example__description paragraph">
             Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
             Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
             этом он не менял своих привычек и по-прежнему спит по 16 часов в
             день.
           </p>
-        </div>
-        <div class="results">
-          <ul class="results__list">
-            <li class="results__item result">
-              <b class="result__value">5 кг</b
-              ><small class="result__text">снижение веса</small>
-            </li>
-            <li class="results__item result">
-              <b class="result__value">60 дней</b
-              ><small class="result__text">затрачено времени</small>
-            </li>
-          </ul>
-        </div>
-        <p class="results__cost">Затраты на питание: 15 000 руб.</p>
-        <div class="results__cat">
-          <img
-            class="results__cat-image"
-            src="img/before-mobile@1x.png"
-            width="311"
-            height="232"
-            alt="Черно-белый кот"
-          />
-          <div class="results__range">
-            <button class="results__range-button" type="button">Было</button>
-            <span
-              class="results__progress-bar results__progress-bar--start"
-            ></span>
-            <button class="results__range-button" type="button">Стало</button>
+          <div class="results">
+            <div class="results__info">
+                <ul class="results__list">
+                  <li class="results__item result">
+                    <b class="result__value">5 кг</b><small class="result__text">снижение веса</small>
+                  </li>
+                  <li class="results__item result">
+                    <b class="result__value">60 дней</b><small class="result__text">затрачено времени</small>
+                  </li>
+                </ul>
+              <p class="results__cost">Затраты на питание: <span class="results__price">15 000 руб.</span></p>
+            </div>
+            <div class="results__cat">
+              <img class="results__cat-image" src="img/before-mobile@1x.png" width="311" height="232" alt="Черно-белый кот" />
+              <div class="results__range">
+                <button class="results__range-button" type="button">Было</button>
+                <span class="results__progress-bar results__progress-bar--start"></span>
+                <button class="results__range-button" type="button">Стало</button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -180,17 +172,15 @@
           <p class="contacts__text">
             ул. Большая <br />
             Конюшенная, д. 19/8 <br />
-            Санкт-Петербург
+            <span class="contacts__text-town">Санкт-Петербург</span>
           </p>
         </div>
         <div class="contacts__map map">
-          <img
-            class="map__image"
-            src="img/bg-map-mobile@1x.png"
-            width="320"
-            height="400"
-            alt="Местоположение офиса"
-          />
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png" />
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png" />
+            <img class="map__image" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Местоположение офиса" />
+          </picture>
         </div>
         <h2 class="contacts__title">
           <img

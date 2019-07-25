@@ -277,68 +277,72 @@
             </div>
           </li>
         </ul>
-        <div class="catalog__extra-products extra-products">
-          <div class="extra-products__title-container">
-            <h2 class="extra-products__title">Дополнительные товары</h2>
-          </div>
-          <ul class="extra-products__list container">
-            <li class="extra-products__item extra-item">
-              <table class="extra-item__params">
-                <caption class="extra-item__title">
-                  Сахарозаменитель
-                </caption>
-                <tr class="extra-item__info">
-                  <td class="extra-item__count">1 упаковка (100 г)</td>
-                  <td class="extra-item__price">200 Р.</td>
-                </tr>
-              </table>
+          <div class="catalog__extra-products extra-products">
+            <div class="extra-products__title-container">
+              <h2 class="extra-products__title">Дополнительные товары</h2>
+            </div>
+            <div class="extra-products__wrapper">
+              <ul class="extra-products__list">
+                <li class="extra-products__item extra-item">
+                  <table class="extra-item__params">
+                    <caption class="extra-item__title">
+                      Сахарозаменитель
+                    </caption>
+                    <tr class="extra-item__info">
+                      <td class="extra-item__count">1 упаковка (100 г)</td>
+                      <td class="extra-item__price">200 Р.</td>
+                    </tr>
+                  </table>
 
-              <a class="extra-item__order button" href="#">Заказать</a>
-            </li>
-            <li class="extra-products__item extra-item">
-              <table class="extra-item__params">
-                <caption class="extra-item__title">
-                  Питьевая вода
-                </caption>
-                <tr class="extra-item__info">
-                  <td class="extra-item__count">5 литров</td>
-                  <td class="extra-item__price">50 Р.</td>
-                </tr>
-              </table>
+                  <a class="extra-item__order button" href="#">Заказать</a>
+                </li>
+                <li class="extra-products__item extra-item">
+                  <table class="extra-item__params">
+                    <caption class="extra-item__title">
+                      Питьевая вода
+                    </caption>
+                    <tr class="extra-item__info">
+                      <td class="extra-item__count">5 литров</td>
+                      <td class="extra-item__price">50 Р.</td>
+                    </tr>
+                  </table>
 
-              <a class="extra-item__order button" href="#">Заказать</a>
-            </li>
-            <li class="extra-products__item extra-item">
-              <table class="extra-item__params">
-                <caption class="extra-item__title">
-                  Молоко
-                </caption>
-                <tr class="extra-item__info">
-                  <td class="extra-item__count">2 литр</td>
-                  <td class="extra-item__price">100 Р.</td>
-                </tr>
-              </table>
+                  <a class="extra-item__order button" href="#">Заказать</a>
+                </li>
+                <li class="extra-products__item extra-item">
+                  <table class="extra-item__params">
+                    <caption class="extra-item__title">
+                      Молоко
+                    </caption>
+                    <tr class="extra-item__info">
+                      <td class="extra-item__count">2 литр</td>
+                      <td class="extra-item__price">100 Р.</td>
+                    </tr>
+                  </table>
 
-              <a class="extra-item__order button" href="#">Заказать</a>
-            </li>
-            <li class="extra-products__item extra-item">
-              <table class="extra-item__params">
-                <caption class="extra-item__title">
-                  Витамины
-                </caption>
-                <tr class="extra-item__info">
-                  <td class="extra-item__count">1 упаковка (30 г)</td>
-                  <td class="extra-item__price">300 Р.</td>
-                </tr>
-              </table>
+                  <a class="extra-item__order button" href="#">Заказать</a>
+                </li>
+                <li class="extra-products__item extra-item">
+                  <table class="extra-item__params">
+                    <caption class="extra-item__title">
+                      Витамины
+                    </caption>
+                    <tr class="extra-item__info">
+                      <td class="extra-item__count">1 упаковка (30 г)</td>
+                      <td class="extra-item__price">300 Р.</td>
+                    </tr>
+                  </table>
 
-              <a class="extra-item__order button" href="#">Заказать</a>
-            </li>
-          </ul>
+                  <a class="extra-item__order button" href="#">Заказать</a>
+                </li>
+              </ul>
+              <div class="catalog__banner-wrapper">
+                <p class="banner">
+                  Закажите все и получите чехол для кота в подарок!
+                </p>
+              </div>
+            </div>
         </div>
-        <p class="catalog__banner banner">
-          Закажите все и получите чехол для кота в подарок!
-        </p>
       </section>
     </main>
     <!-- Footer -->
@@ -356,13 +360,11 @@
           </p>
         </div>
         <div class="contacts__map map">
-          <img
-            class="map__image"
-            src="img/bg-map-mobile@1x.png"
-            width="320"
-            height="400"
-            alt="Местоположение офиса"
-          />
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png" />
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png" />
+            <img class="map__image" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Местоположение офиса" />
+          </picture>
         </div>
         <h2 class="contacts__title">
           <img

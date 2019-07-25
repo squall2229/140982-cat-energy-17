@@ -37,3 +37,15 @@
 
   background-color: $primary_gray;
 }
+
+@media (min-width: $tablet) {
+  .result__text {
+    background-color: #ffffff;
+  }
+}
+
+@media (min-width: $desktop) {
+  .result__text {
+    background-color: $primary_gray;
+  }
+}

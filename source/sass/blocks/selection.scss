@@ -20,3 +20,26 @@
   text-transform: uppercase;
   color: $black;
 }
+
+@media (min-width: $tablet) {
+  .selection__title {
+    margin-bottom: 53px;
+  }
+
+  .selection__description {
+    padding-left: 70px;
+    padding-right: 0;
+    max-width: 400px;
+
+    font-size: 20px;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: $desktop) {
+  .selection__description {
+    padding-left: 110px;
+    max-width: 450px;
+    margin-bottom: 69px;
+  }
+}

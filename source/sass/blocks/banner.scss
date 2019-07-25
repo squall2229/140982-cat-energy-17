@@ -32,3 +32,39 @@
     content: "";
   }
 }
+
+@media (min-width: $tablet) {
+  .banner {
+    padding-top: 75px;
+    padding-left: 424px;
+    padding-bottom: 70px;
+    padding-right: 124px;
+
+    background-position: center -414px;
+    background-size: cover;
+
+    &::after {
+      top: 65px;
+      left: 91px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .banner {
+    width: 245px;
+    padding-top: 190px;
+    padding-bottom: 43px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    text-align: center;
+
+    background-position: center center;
+
+    &::after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

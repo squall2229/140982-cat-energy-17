@@ -4,11 +4,6 @@
   display: flex;
   width: 100%;
   align-items: center;
-  margin-bottom: 14px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
 
   &:hover .field__radio-control,
   &:hover .field__checkbox-control {
@@ -157,4 +152,32 @@
 .field__radio:disabled ~ .field__label,
 .field__checkbox:disabled ~ .field__label {
   opacity: 0.3;
+}
+
+@media (min-width: $tablet) {
+  .field__label {
+    font-size: 20px;
+  }
+
+  .field__input {
+    height: 52px;
+    font-size: 20px;
+  }
+
+  .field__radio-control {
+    width: 40px;
+    height: 40px;
+  }
+
+  .field__textarea {
+    height: 174px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .field {
+    &--extra {
+      width: auto;
+    }
+  }
 }
