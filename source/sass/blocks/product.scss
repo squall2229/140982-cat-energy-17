@@ -46,9 +46,41 @@
     position: relative;
 
     width: 324px;
+    padding-top: 163px;
+    padding-left: 37px;
+    padding-right: 37px;
+    padding-bottom: 39px;
 
     border-bottom: none;
     background-color: $light_gray;
+  }
+
+  .product__title {
+    padding-top: 0;
+    max-width: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 18px;
+
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .product__params {
+    margin-bottom: 31px;
+
+    font-size: 16px;
+
+    td {
+      padding-top: 9px;
+      padding-bottom: 9px;
+
+      font-weight: 300;
+    }
+
+    tr {
+      border-bottom: 1px solid $medium_gray;
+    }
   }
 
   .product__image {
