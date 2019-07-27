@@ -30,7 +30,7 @@
         <nav class="main-nav">
           <ul class="main-nav__list menu">
             <li class="menu__item">
-              <a class="menu__link" href="index.html">Главная</a>
+              <a class="menu__link menu__link--active" href="index.html">Главная</a>
             </li>
             <li class="menu__item">
               <a class="menu__link" href="catalog.html">Каталог продукции</a>
@@ -46,6 +46,7 @@
     <main class="main">
       <!-- Programs -->
       <section class="programs">
+        <header class="programs__header">
         <div class="programs__promo promo">
           <div class="promo__title-container">
             <h1 class="promo__title title title--white title--center">
@@ -70,10 +71,10 @@
               alt="Контейнер с питанием для кота"
             />
           </picture>
-          <div class="promo__get-plan-container">
-            <a class="promo__get-plan button button--width-auto" href="form.html"
-              >Подобрать программу</a
-            >
+
+        </header>
+        <div class="programs__get-plan-container">
+            <a class="programs__get-plan button button--width-auto" href="form.html">Подобрать программу</a>
           </div>
         </div>
         <ul class="programs__list">
@@ -141,10 +142,10 @@
             <div class="results__info">
                 <ul class="results__list">
                   <li class="results__item result">
-                    <b class="result__value">5 кг</b><small class="result__text">снижение веса</small>
+                    <b class="result__value">5 кг</b><small class="result__text">снижение <br/> веса</small>
                   </li>
                   <li class="results__item result">
-                    <b class="result__value">60 дней</b><small class="result__text">затрачено времени</small>
+                    <b class="result__value">60 дней</b><small class="result__text">затрачено <br/> времени</small>
                   </li>
                 </ul>
               <p class="results__cost">Затраты на питание: <span class="results__price">15 000 руб.</span></p>

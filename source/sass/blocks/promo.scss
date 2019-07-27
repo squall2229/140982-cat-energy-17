@@ -1,14 +1,5 @@
 .promo {
   position: relative;
-  margin-bottom: 22px;
-
-  background-image: url("../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 305px;
-}
-
-.promo__get-plan-container {
-  @include paddingMobile;
 }
 
 .promo__title-container {
@@ -47,29 +38,20 @@
 
 @media (min-width: $tablet) {
   .promo {
-    padding-bottom: 529px;
+    position: relative;
+
     padding-top: 56px;
     margin-bottom: 0;
-
-    background-image: none;
   }
 
   .promo__title-container {
-    margin-bottom: 48px;
+    margin-bottom: 0;
     padding-bottom: 0;
     padding-top: 0;
     padding-left: 120px;
     padding-right: 120px;
 
     background-image: none;
-  }
-
-  .promo__get-plan-container {
-    position: relative;
-    z-index: 1;
-
-    padding-left: 120px;
-    padding-right: 120px;
   }
 
   .promo__intro {
@@ -105,21 +87,15 @@
 @media (min-width: $desktop) {
   .promo {
     padding-top: 223px;
-    padding-bottom: 196px;
-    margin-bottom: 80px;
-
-    background-image: url("../img/index-background-desktop@1x.jpg");
-    background-size: 50% auto;
-    background-position: right top;
-  }
-
-  .promo__get-plan-container {
-    padding-left: 190px;
+    margin-bottom: 0;
   }
 
   .promo__title-container {
-    margin-bottom: 53px;
-    padding-left: 190px;
+    padding-left: 120px;
+    padding-right: 120px;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .promo__title {
@@ -129,8 +105,8 @@
   .promo__image {
     top: 142px;
     left: auto;
-    right: 328px;
-    transform: none;
+    right: calc(50% - 116px);
+    transform: translateX(50%);
 
     width: 552px;
     height: 499px;
