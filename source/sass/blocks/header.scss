@@ -91,10 +91,10 @@
   }
 
   .header__container {
-    padding-left: 40px;
+    padding-left: $padding_desktop;
     padding-top: 57px;
-    padding-right: 40px;
-    max-width: 1300px;
+    padding-right: $padding_desktop;
+    max-width: $container_width_desktop;
   }
 
   .header__logo {

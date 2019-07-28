@@ -45,6 +45,6 @@
 
 @media (min-width: $desktop) {
   .map {
-    width: 1300px;
+    width: $container_width_desktop;
   }
 }
