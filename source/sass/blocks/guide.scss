@@ -142,6 +142,10 @@
 
 @media (min-width: $desktop) {
   .guide {
+    max-width: $container_width_desktop;
+    margin-left: auto;
+    margin-right: auto;
+
     border-bottom: none;
   }
 

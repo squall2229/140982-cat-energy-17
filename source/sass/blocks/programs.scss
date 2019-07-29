@@ -100,13 +100,16 @@
   .programs__list {
     display: flex;
     width: 100%;
-    justify-content: center;
+    justify-content: space-between;
+    max-width: $container_width_desktop;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .programs__item {
     margin-bottom: 0;
     margin-left: 0;
-    margin-right: 80px;
+    margin-right: 0;
 
     &:last-child {
       margin-right: 0;
