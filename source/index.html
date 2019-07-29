@@ -23,14 +23,14 @@
               />
             </picture>
           </a>
-          <button class="header__toggle header__toggle--open" type="button">
+          <button class="header__toggle header__toggle--nojs" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--nojs">
           <ul class="main-nav__list menu">
             <li class="menu__item">
-              <a class="menu__link" href="index.html">Главная</a>
+              <a class="menu__link menu__link--active" href="index.html">Главная</a>
             </li>
             <li class="menu__item">
               <a class="menu__link" href="catalog.html">Каталог продукции</a>
@@ -46,35 +46,36 @@
     <main class="main">
       <!-- Programs -->
       <section class="programs">
-        <div class="programs__promo promo">
-          <div class="promo__title-container">
-            <h1 class="promo__title title title--white title--center">
-              Функциональное питание для котов
-            </h1>
-            <p class="promo__intro">Занялся собой? Займись котом!</p>
+        <header class="programs__header">
+          <div class="programs__promo promo">
+            <div class="promo__title-container">
+              <h1 class="promo__title title title--white title--center">
+                Функциональное питание для котов
+              </h1>
+              <p class="promo__intro">Занялся собой? Займись котом!</p>
+            </div>
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcset="img/index-can-tablet@1x.png"
+              />
+              <source
+                media="(min-width: 1300px)"
+                srcset="img/index-can-desktop@1x.png"
+              />
+              <img
+                class="promo__image"
+                src="img/index-can-mobile@1x.png"
+                width="280"
+                height="270"
+                alt="Контейнер с питанием для кота"
+              />
+            </picture>
           </div>
-          <picture>
-            <source
-              media="(min-width: 768px)"
-              srcset="img/index-can-tablet@1x.png"
-            />
-            <source
-              media="(min-width: 1300px)"
-              srcset="img/index-can-desktop@1x.png"
-            />
-            <img
-              class="promo__image"
-              src="img/index-can-mobile@1x.png"
-              width="280"
-              height="270"
-              alt="Контейнер с питанием для кота"
-            />
-          </picture>
-          <div class="promo__get-plan-container">
-            <a class="promo__get-plan button button--width-auto" href="form.html"
-              >Подобрать программу</a
-            >
+          <div class="programs__get-plan-container">
+            <a class="programs__get-plan button button--width-auto" href="form.html">Подобрать программу</a>
           </div>
+        </header>
         </div>
         <ul class="programs__list">
           <li class="programs__item plan plan--slim">
@@ -300,5 +301,6 @@
         </div>
       </section>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

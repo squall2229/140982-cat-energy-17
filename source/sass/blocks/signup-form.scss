@@ -72,8 +72,8 @@
     justify-content: space-between;
     width: 100%;
     margin-bottom: 70px;
-    padding-left: 110px;
-    padding-right: 110px;
+    padding-left: $padding_desktop;
+    padding-right: $padding_desktop;
   }
 
   .signup-form__wrapper-extra-product {
@@ -93,8 +93,8 @@
   }
 
   .signup-form__wrapper-submit {
-    padding-left: 110px;
-    padding-right: 110px;
+    padding-left: $padding_desktop;
+    padding-right: $padding_desktop;
     justify-content: flex-start;
     max-width: none;
   }

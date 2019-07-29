@@ -1,0 +1,17 @@
+.main-nav {
+  &--open {
+    display: block;
+  }
+
+  &--nojs {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-nav {
+    &--close {
+      display: none;
+    }
+  }
+}

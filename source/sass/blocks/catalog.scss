@@ -19,9 +19,15 @@
 }
 
 @media (min-width: $tablet) {
+  .catalog {
+    padding-top: 57px;
+  }
+
   .catalog__title {
-    margin-bottom: 156px;
-    border-bottom: none;
+    margin-bottom: 95px;
+    padding-bottom: 0;
+    padding-top: 0;
+    border-bottom: 0;
   }
 
   .catalog__banner-wrapper {
@@ -31,6 +37,22 @@
 }
 
 @media (min-width: $desktop) {
+  .catalog {
+    padding-top: 72px;
+  }
+
+  .catalog__title {
+    max-width: $container_width_desktop;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .catalog__list {
+    max-width: $container_width_desktop;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .catalog__banner-wrapper {
     padding-left: 0;
     padding-right: 0;

@@ -45,6 +45,10 @@
   &--open {
     background-image: url("../img/icon-close.svg");
   }
+
+  &--nojs {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet) {
@@ -60,7 +64,6 @@
   }
 
   .header__logo-container {
-    width: 200px;
     padding-top: 0;
     padding-bottom: 0;
     padding-right: 0;
@@ -88,10 +91,10 @@
   }
 
   .header__container {
-    padding-left: 110px;
-    padding-top: 53px;
-    padding-right: 110px;
-    max-width: none;
+    padding-left: $padding_desktop;
+    padding-top: 57px;
+    padding-right: $padding_desktop;
+    max-width: $container_width_desktop;
   }
 
   .header__logo {
