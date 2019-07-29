@@ -55,6 +55,10 @@
   margin-right: auto;
 }
 
+.results__cat-image-after {
+  display: none;
+}
+
 .results__progress-bar {
   position: relative;
 
@@ -94,16 +98,15 @@
 }
 
 @media (min-width: $tablet) {
-  .results {
-    @include paddingMobile;
-  }
-
   .results__info {
+    @include paddingMobile;
+
     display: flex;
     align-items: center;
     width: 100%;
+    max-width: $container_width_desktop;
     justify-content: space-between;
-    margin-bottom: 86px;
+    margin-bottom: 102px;
   }
 
   .results__cost {
@@ -123,9 +126,116 @@
     width: auto;
   }
 
+  .results__range {
+    position: relative;
+    z-index: 1;
+  }
+
+  .results__progress-bar {
+    width: 428px;
+    height: 6px;
+    margin-left: 22px;
+    margin-right: 22px;
+
+    border-radius: 2.5px;
+    border: none;
+    background-color: #dcdcdc;
+
+    &::after {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      display: block;
+      width: 34px;
+      height: 34px;
+
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+      border: solid 1px #cdcdcd;
+      border-radius: 50%;
+      background-color: #ffffff;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      z-index: 1;
+      transform: translate(-50%, -50%);
+
+      display: block;
+      width: 8px;
+      height: 8px;
+
+      background-color: $primary_green;
+      border-radius: 50%;
+    }
+  }
+
+  .results__range-button {
+    font-size: 20px;
+  }
+
   .results__price {
     margin-top: 11px;
     display: block;
+  }
+
+  .results__cat {
+    position: relative;
+    padding-bottom: 72px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      z-index: 0;
+      left: 0;
+      bottom: 0;
+
+      display: block;
+      width: 50%;
+      height: 462px;
+
+      background-color: $light_gray;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 0;
+      right: 0;
+      bottom: 0;
+
+      display: block;
+      width: 50%;
+      height: 462px;
+
+      background-color: #eaeaea;
+    }
+  }
+
+  .results__cat-image {
+    position: relative;
+    transform: translateX(-50%);
+    z-index: 1;
+
+    width: 338px;
+    height: 499px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 18px;
+  }
+
+  .results__cat-image-after {
+    position: absolute;
+    top: -18px;
+    right: 49%;
+    transform: translateX(50%);
+
+    display: block;
+    width: 690px;
+    height: auto;
   }
 
   .results__item {
