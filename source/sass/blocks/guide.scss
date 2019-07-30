@@ -147,6 +147,20 @@
   }
 }
 
+@media (min-width: 769px) and (max-width: 1299px) {
+  .guide__list {
+    justify-content: flex-start;
+  }
+
+  .guide__item {
+    margin-right: 100px;
+
+    &:nth-child(odd) {
+      margin-right: 100px;
+    }
+  }
+}
+
 @media (min-width: $desktop) {
   .guide {
     max-width: $container_width_desktop;
@@ -156,6 +170,10 @@
     border-bottom: none;
   }
 
+  .guide__title {
+    margin-bottom: 63px;
+  }
+
   .guide__list {
     justify-content: space-between;
   }
@@ -163,5 +181,22 @@
   .guide__item {
     width: 246px;
     min-height: 230px;
+    margin: 0;
+
+    &::after {
+      top: -30px;
+      line-height: 1;
+      text-transform: uppercase;
+      bottom: auto;
+    }
+
+    &:nth-child(odd) {
+      margin-right: 0;
+    }
+
+    &:last-child {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
   }
 }

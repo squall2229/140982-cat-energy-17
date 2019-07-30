@@ -249,9 +249,40 @@
 
 @media (min-width: $desktop) {
   .results {
+    position: relative;
+
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+  }
+
+  .results__cat {
+    position: absolute;
+    right: 0;
+    top: -200%;
+
+    padding-bottom: 0;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  .results__cat-image {
+    transform: none;
+
+    width: 365px;
+    height: 499px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .results__cat-image-after {
+    transform: none;
+
+    width: 690px;
+    height: 517px;
   }
 
   .results__info {
