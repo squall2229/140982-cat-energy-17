@@ -22,7 +22,8 @@
 .result__text {
   position: absolute;
   left: 50%;
-  transform: translate(-50%, -7px);
+  bottom: -1.5em;
+  transform: translateX(-50%);
 
   display: block;
   // width: 87px;
@@ -53,6 +54,7 @@
 
   .result__text {
     width: calc(100% - 12px);
+    bottom: -5px;
 
     font-size: 14px;
     line-height: 1;

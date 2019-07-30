@@ -7,3 +7,22 @@
 .footer__copyright {
   @include paddingMobile;
 }
+
+@media (min-width: $tablet) {
+  .footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: $container_width_desktop;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: $container_width_desktop;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 52px;
+    padding-bottom: 55px;
+  }
+}

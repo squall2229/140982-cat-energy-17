@@ -59,6 +59,12 @@
     padding-bottom: 60px;
   }
 
+  .contacts__title {
+    padding-bottom: 0;
+    padding-top: 0;
+    width: auto;
+  }
+
   .contacts__intro {
     max-width: 160px;
 
@@ -74,6 +80,11 @@
   .contacts__text-town {
     display: block;
     margin-top: 16px;
+  }
+
+  .contacts__title-img {
+    width: 128px;
+    height: 24px;
   }
 }
 
