@@ -41,3 +41,11 @@
     }
   }
 }
+
+@media (min-width: $desktop) {
+  .copyright__link {
+    span {
+      margin-right: 23px;
+    }
+  }
+}

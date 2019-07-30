@@ -251,15 +251,22 @@
   .results {
     position: relative;
 
+    max-width: $container_width_desktop;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
   }
 
+  .results__cost {
+    text-align: left;
+  }
+
   .results__cat {
     position: absolute;
     right: 0;
-    top: -200%;
+    top: -240%;
 
     padding-bottom: 0;
 
@@ -271,6 +278,7 @@
 
   .results__cat-image {
     transform: none;
+    right: 271px;
 
     width: 365px;
     height: 499px;
@@ -288,14 +296,16 @@
   .results__info {
     display: block;
     margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .results__list {
-    margin-bottom: 62px;
+    margin-bottom: 57px;
   }
 
   .results__price {
     display: inline;
-    margin-left: 64px;
+    margin-left: 60px;
   }
 }

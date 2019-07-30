@@ -48,18 +48,34 @@
 @media (min-width: $desktop) {
   .example {
     padding-bottom: 0;
+    padding-top: 71px;
+  }
+
+  .example__title {
+    max-width: $container_width_desktop;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 75px;
   }
 
   .example__wrapper {
-    padding-top: 75px;
+    padding-top: 71px;
     padding-bottom: 75px;
-
     background-color: $primary_gray;
   }
 
+  .example__container-center {
+    max-width: $container_width_desktop;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
   .example__description {
-    max-width: 540px;
+    max-width: 430px;
     padding-right: 0;
-    margin-bottom: 71px;
+    margin-bottom: 68px;
+    padding-left: 0;
   }
 }

@@ -87,3 +87,28 @@
     }
   }
 }
+
+@media (min-width: $desktop) {
+  .social {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .social__item {
+    margin-right: 0;
+
+    &:first-child {
+      width: 28px;
+      margin-right: 28px;
+    }
+
+    &:nth-child(2) {
+      width: 23px;
+      margin-right: 28px;
+    }
+
+    &:last-child {
+      width: 14px;
+    }
+  }
+}
