@@ -5,8 +5,8 @@
 
   margin: 0;
   width: 100%;
-  padding-left: 70px;
-  padding-right: 70px;
+  padding-left: 58px;
+  padding-right: 60px;
   padding-top: 186px;
   padding-bottom: 43px;
 
@@ -37,15 +37,17 @@
   .banner {
     padding-top: 75px;
     padding-left: 424px;
-    padding-bottom: 70px;
+    padding-bottom: 66px;
     padding-right: 124px;
 
-    background-position: center -414px;
+    text-align: left;
+
+    background-position: 15px -345px;
     background-size: cover;
 
     &::after {
-      top: 65px;
-      left: 91px;
+      top: 66px;
+      left: 118px;
     }
   }
 }

@@ -36,10 +36,16 @@
   .map {
     width: 768px;
     height: 400px;
+
+    &::after {
+      width: 113px;
+      height: 106px;
+      top: 144px;
+    }
   }
 
   .map__image {
-    top: 0;
+    top: -5px;
   }
 }
 
@@ -48,16 +54,15 @@
     width: 100%;
 
     &::after {
-      width: 113px;
-      height: 106px;
       top: 150px;
       left: auto;
-      right: 318px;
+      right: 252px;
       transform: none;
     }
   }
 
   .map__image {
     height: auto;
+    top: 0;
   }
 }

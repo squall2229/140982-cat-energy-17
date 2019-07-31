@@ -87,6 +87,10 @@
 
     &--black {
       color: $black;
+
+      &::after {
+        border-bottom: 2px solid $primary_green;
+      }
     }
 
     &--active {

@@ -3,7 +3,7 @@
 
   margin: 0;
   padding-top: 26px;
-  padding-bottom: 34px;
+  padding-bottom: 30px;
   padding-left: 20px;
 
   &::after {
@@ -26,33 +26,82 @@
   background-color: #ffffff;
 }
 
-.extra-products__list {
-  list-style: none;
+.extra-products__wrapper {
   padding-left: 20px;
   padding-right: 20px;
-  margin: 0;
+}
 
-  margin-bottom: 39px;
+.extra-products__list {
+  padding-bottom: 41px;
 }
 
 @media (min-width: $tablet) {
-  .extra-products__list {
+  .extra-products__wrapper {
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  .extra-products__list {
+    width: 100%;
+
+    padding-bottom: 67px;
+  }
+
+  .extra-products__title-container {
+    padding-left: 30px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 74px;
+
+    &::after {
+      width: 100%;
+      top: calc(50% + 5px);
+    }
+  }
+
+  .extra-products__title {
+    font-size: 36px;
+    line-height: 1;
+    padding-left: 38px;
+    padding-right: 34px;
   }
 }
 
 @media (min-width: $desktop) {
   .extra-products__list {
+    width: 100%;
+    max-width: 895px;
+    border-collapse: collapse;
+    border-top: 1px solid $medium_gray;
+  }
+
+  .extra-products__title-container {
     padding-left: 0;
     padding-right: 0;
-    margin-right: 80px;
-    width: 100%;
+    margin-bottom: 81px;
+
+    &::after {
+      width: 100vw;
+    }
+  }
+
+  .extra-products__title {
+    @include greenLine;
+
+    position: relative;
+
+    display: block;
+    max-width: $container_width_desktop;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .extra-products__wrapper {
     display: flex;
     justify-content: space-between;
+    max-width: $container_width_desktop;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
     padding-left: $padding_desktop;
     padding-right: $padding_desktop;

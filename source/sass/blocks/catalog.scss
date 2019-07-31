@@ -21,6 +21,7 @@
 @media (min-width: $tablet) {
   .catalog {
     padding-top: 57px;
+    padding-bottom: 77px;
   }
 
   .catalog__title {
@@ -31,14 +32,15 @@
   }
 
   .catalog__banner-wrapper {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 @media (min-width: $desktop) {
   .catalog {
     padding-top: 72px;
+    padding-bottom: 83px;
   }
 
   .catalog__title {
@@ -51,10 +53,5 @@
     max-width: $container_width_desktop;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .catalog__banner-wrapper {
-    padding-left: 0;
-    padding-right: 0;
   }
 }
