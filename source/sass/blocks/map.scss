@@ -45,6 +45,19 @@
 
 @media (min-width: $desktop) {
   .map {
-    width: $container_width_desktop;
+    width: 100%;
+
+    &::after {
+      width: 113px;
+      height: 106px;
+      top: 150px;
+      left: auto;
+      right: 318px;
+      transform: none;
+    }
+  }
+
+  .map__image {
+    height: auto;
   }
 }

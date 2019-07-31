@@ -62,6 +62,19 @@
     padding-top: 71px;
     padding-bottom: 75px;
     background-color: $primary_gray;
+    position: relative;
+
+    &::after {
+      content: "";
+      bottom: 0;
+      display: block;
+      position: absolute;
+      right: 0;
+      left: auto;
+      height: 462px;
+      width: 25%;
+      background-color: #eaeaea;
+    }
   }
 
   .example__container-center {
