@@ -55,14 +55,8 @@
               <p class="promo__intro">Занялся собой? Займись котом!</p>
             </div>
             <picture>
-              <source
-                media="(min-width: 768px)"
-                srcset="img/index-can-tablet@1x.png"
-              />
-              <source
-                media="(min-width: 1300px)"
-                srcset="img/index-can-desktop@1x.png"
-              />
+              <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png" />
+              <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg"/>
               <img
                 class="promo__image"
                 src="img/index-can-mobile@1x.png"
@@ -153,16 +147,20 @@
               </div>
               <div class="results__cat">
                 <div class="results__cat-pictures">
-                  <picture>
-                    <source media="(min-width: 768px)" srcset="img/before-desktop.png" />
-                    <source media="(min-width: 1300px)" srcset="img/before-desktop.png" />
-                    <img class="results__cat-image" src="img/before-mobile@1x.png" width="311" height="232" alt="Черно-белый кот" />
-                  </picture>
-                  <picture>
-                    <source media="(min-width: 768px)" srcset="img/after-tablet.png" />
-                    <source media="(min-width: 1300px)" srcset="img/after-desktop.png" />
-                    <img class="results__cat-image-after" src="img/after-mobile@1x.png" width="311" height="232" alt="Черно-белый кот" />
-                  </picture>
+                  <div class="results__cat-image-container">
+                    <picture>
+                      <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png" />
+                      <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png" />
+                      <img class="results__cat-image" src="img/before-mobile@1x.png" width="311" height="232" alt="Черно-белый кот" />
+                    </picture>
+                  </div>
+                  <div class="results__cat-image-container">
+                    <picture>
+                      <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png" />
+                      <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png" />
+                      <img class="results__cat-image-after" src="img/after-mobile@1x.png" width="311" height="232" alt="Черно-белый кот" />
+                    </picture>
+                  </div>
                 </div>
                 <div class="results__range">
                   <button class="results__range-button" type="button">Было</button>
