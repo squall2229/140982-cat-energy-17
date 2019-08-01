@@ -29,11 +29,24 @@
 
 @media (min-width: $tablet) {
   .signup-form__group-fields {
-    margin-bottom: 70px;
+    margin-bottom: 65px;
 
     &:first-child {
-      margin-bottom: 70px;
+      margin-bottom: 73px;
     }
+
+    &--extra {
+      margin-bottom: 27px;
+    }
+  }
+
+  .signup-form__tooltip {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .signup-form__wrapper-main-info {
+    padding-bottom: 74px;
   }
 
   .signup-form__wrapper-extra-product {
@@ -48,7 +61,7 @@
     padding-right: 70px;
     display: flex;
     max-width: 768px;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
   }
 
@@ -58,7 +71,7 @@
     padding-right: 67px;
     width: auto;
     margin-left: 0;
-    margin-right: 0;
+    margin-right: 61px;
     margin-bottom: 0;
 
     font-size: 20px;

@@ -6,6 +6,8 @@
   width: 320px;
   height: 362px;
 
+  background-image: url("../img/bg-map-mobile@1x.png");
+
   &::after {
     position: absolute;
     top: 139px;
@@ -37,6 +39,8 @@
     width: 768px;
     height: 400px;
 
+    background-image: url("../img/bg-map-tablet@1x.png");
+
     &::after {
       width: 113px;
       height: 106px;
@@ -53,16 +57,18 @@
   .map {
     width: 100%;
 
+    background-image: url("../img/bg-map-desktop@1x.png");
+
     &::after {
       top: 150px;
       left: auto;
-      right: 252px;
+      right: 318px;
       transform: none;
     }
   }
 
   .map__image {
-    height: auto;
+    // height: auto;
     top: 0;
   }
 }
