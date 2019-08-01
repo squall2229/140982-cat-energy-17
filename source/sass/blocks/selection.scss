@@ -48,13 +48,18 @@
     padding-top: 56px;
   }
 
-  .selection__description {
+  .selection__description-wrapper {
     padding-left: $padding_desktop;
-    max-width: 426px;
-    margin-bottom: 66px;
     max-width: $container_width_desktop;
     margin-right: auto;
     margin-left: auto;
+  }
+
+  .selection__description {
+    padding-left: $padding_desktop;
+    width: 426px;
+    padding-left: 0;
+    margin-bottom: 66px;
   }
 
   .selection__title {
