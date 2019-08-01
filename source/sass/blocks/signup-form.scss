@@ -11,8 +11,12 @@
   }
 }
 
+.signup-form__wrapper-main-info {
+  margin-bottom: 28px;
+}
+
 .signup-form__submit {
-  margin-bottom: 19px;
+  margin-bottom: 23px;
   width: calc(100% - 40px);
   margin-left: auto;
   margin-right: auto;
@@ -84,7 +88,11 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    margin-bottom: 70px;
+    margin-bottom: 0;
+    padding-bottom: 69px;
+    max-width: $container_width_desktop;
+    margin-right: auto;
+    margin-left: auto;
     padding-left: $padding_desktop;
     padding-right: $padding_desktop;
   }
@@ -94,6 +102,16 @@
   }
 
   .signup-form__group-fields {
+    margin-bottom: 67px;
+
+    &:not(:first-child) {
+      max-width: $container_width_desktop;
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: $padding_desktop;
+      padding-right: $padding_desktop;
+    }
+
     &:first-child {
       margin-bottom: 0;
     }
@@ -108,8 +126,10 @@
   .signup-form__wrapper-submit {
     padding-left: $padding_desktop;
     padding-right: $padding_desktop;
+    max-width: $container_width_desktop;
+    margin-right: auto;
+    margin-left: auto;
     justify-content: flex-start;
-    max-width: none;
   }
 
   .signup-form__submit {

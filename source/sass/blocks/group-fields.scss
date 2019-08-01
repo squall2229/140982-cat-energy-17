@@ -18,8 +18,6 @@
 }
 
 .group-fields__title-container {
-  @include paddingMobile;
-
   margin: 0;
   margin-bottom: 32px;
   width: 100%;
@@ -49,10 +47,6 @@
 
   &:last-child {
     margin-bottom: 0;
-  }
-
-  &:first-child {
-    padding-bottom: 23px;
   }
 }
 
@@ -99,10 +93,6 @@
   .group-fields__field {
     margin-bottom: 20px;
 
-    &:first-child {
-      padding-bottom: 0;
-    }
-
     &--radio {
       margin-bottom: 13px;
     }
@@ -129,15 +119,33 @@
     }
 
     &--width-desktop {
-      max-width: 500px;
+      max-width: 568px;
     }
 
     &--extra {
       width: auto;
-      margin-right: 106px;
+      margin-right: 0;
+      margin-bottom: 0;
+
+      &:first-child {
+        margin-right: 109px;
+      }
+
+      &:nth-child(2) {
+        margin-right: 141px;
+      }
+
+      &:nth-child(3) {
+        margin-right: 200px;
+      }
+
+      &:nth-child(2n) {
+        padding-left: 0;
+      }
 
       &:last-child {
         margin-right: 0;
+        margin-bottom: 0;
       }
     }
 
@@ -168,7 +176,7 @@
     }
 
     &--width-desktop {
-      width: 500px;
+      width: 568px;
     }
   }
 }

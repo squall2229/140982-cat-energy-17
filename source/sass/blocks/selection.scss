@@ -1,5 +1,5 @@
 .selection {
-  padding-top: 56px;
+  padding-top: 26px;
   padding-bottom: 32px;
 }
 
@@ -13,7 +13,7 @@
 .selection__description {
   @include paddingMobile;
   margin: 0;
-  margin-bottom: 67px;
+  margin-bottom: 40px;
 
   font-size: $primary_font_size;
   line-height: 18px;
@@ -23,6 +23,7 @@
 
 @media (min-width: $tablet) {
   .selection {
+    padding-top: 72px;
     padding-bottom: 76px;
   }
 
@@ -33,6 +34,7 @@
   .selection__description {
     padding-left: 70px;
     padding-right: 0;
+    margin-bottom: 67px;
     max-width: 400px;
 
     font-size: 20px;
@@ -41,9 +43,25 @@
 }
 
 @media (min-width: $desktop) {
+  .selection {
+    padding-bottom: 85px;
+    padding-top: 56px;
+  }
+
   .selection__description {
-    padding-left: 40px;
-    max-width: 450px;
-    margin-bottom: 69px;
+    padding-left: $padding_desktop;
+    max-width: 426px;
+    margin-bottom: 66px;
+    max-width: $container_width_desktop;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .selection__title {
+    margin-bottom: 55px;
+    padding-left: $padding_desktop;
+    max-width: $container_width_desktop;
+    margin-right: auto;
+    margin-left: auto;
   }
 }

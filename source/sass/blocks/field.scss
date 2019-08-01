@@ -159,6 +159,10 @@
     font-size: 20px;
 
     margin-right: 18px;
+
+    &--extra {
+      margin-right: 0;
+    }
   }
 
   .field__input {
