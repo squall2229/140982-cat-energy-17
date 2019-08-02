@@ -60,12 +60,12 @@
     align-items: center;
     justify-content: flex-end;
 
-    border-bottom: solid 1px rgba(#cdcdcd, 0.5);
-    border-right: solid 1px rgba(#cdcdcd, 0.5);
-    border-left: solid 1px rgba(#cdcdcd, 0.5);
+    border-bottom: solid 1px rgba($medium_gray, 0.5);
+    border-right: solid 1px rgba($medium_gray, 0.5);
+    border-left: solid 1px rgba($medium_gray, 0.5);
 
     &:first-child {
-      border-top: solid 1px rgba(#cdcdcd, 0.5);
+      border-top: solid 1px rgba($medium_gray, 0.5);
     }
 
     td {

@@ -151,7 +151,7 @@
       height: 34px;
 
       box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
-      border: solid 1px #cdcdcd;
+      border: solid 1px $medium_gray;
       border-radius: 50%;
       background-color: #ffffff;
     }
@@ -310,9 +310,6 @@
     left: auto;
     right: -58px;
     bottom: 0;
-  }
-
-  .results__cat-image {
   }
 
   .results__range {
