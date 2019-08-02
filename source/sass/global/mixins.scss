@@ -101,17 +101,16 @@
 @mixin greenLine {
   position: relative;
 
-  &::after {
-    position: absolute;
-    z-index: -1;
-    top: 11px;
-    right: 0;
-
-    width: calc(100% - 20px);
-    height: 3px;
-    display: block;
-    background-color: $primary_green;
-
+  &::before {
     content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+    height: 2px;
+
+    background-color: $primary_green;
   }
 }

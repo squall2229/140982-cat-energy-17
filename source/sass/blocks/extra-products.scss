@@ -3,8 +3,7 @@
 
   margin: 0;
   padding-top: 26px;
-  padding-bottom: 34px;
-  padding-left: 20px;
+  padding-bottom: 30px;
 
   &::after {
     top: calc(50% - 1.5px);
@@ -14,8 +13,6 @@
 
 .extra-products__title {
   margin: 0;
-  display: inline-block;
-  padding-right: 22px;
 
   font-size: $title_font_size;
   font-family: inherit;
@@ -23,36 +20,89 @@
   color: $black;
   line-height: 24px;
 
-  background-color: #ffffff;
+  span {
+    padding-right: 22px;
+
+    background-color: #ffffff;
+    padding-left: 20px;
+  }
+}
+
+.extra-products__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .extra-products__list {
-  list-style: none;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin: 0;
-
-  margin-bottom: 39px;
+  width: 100%;
+  padding-bottom: 41px;
 }
 
 @media (min-width: $tablet) {
-  .extra-products__list {
+  .extra-products__wrapper {
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  .extra-products__list {
+    padding-bottom: 67px;
+  }
+
+  .extra-products__title-container {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 74px;
+  }
+
+  .extra-products__title {
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    font-size: 36px;
+    line-height: 1;
+
+    span {
+      padding-left: 37px;
+      padding-right: 37px;
+    }
   }
 }
 
 @media (min-width: $desktop) {
   .extra-products__list {
+    width: 100%;
+    max-width: 895px;
+    border-collapse: collapse;
+    border-top: 1px solid $medium_gray;
+  }
+
+  .extra-products__title-container {
     padding-left: 0;
     padding-right: 0;
-    margin-right: 80px;
-    width: 100%;
+    margin-bottom: 81px;
+  }
+
+  .extra-products__title {
+    @include greenLine;
+
+    position: relative;
+
+    display: block;
+    max-width: $container_width_desktop;
+    padding-left: 0;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .extra-products__wrapper {
     display: flex;
     justify-content: space-between;
+    max-width: $container_width_desktop;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
     padding-left: $padding_desktop;
     padding-right: $padding_desktop;

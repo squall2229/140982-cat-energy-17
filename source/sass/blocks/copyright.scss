@@ -26,3 +26,26 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: $tablet) {
+  .copyright {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .copyright__link {
+    span {
+      margin-right: 23px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .copyright__link {
+    span {
+      margin-right: 23px;
+    }
+  }
+}

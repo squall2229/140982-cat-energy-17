@@ -52,3 +52,63 @@
     fill: $primary_green;
   }
 }
+
+@media (min-width: $tablet) {
+  .social {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: auto;
+    margin-left: 151px;
+    margin-right: 121px;
+
+    border: none;
+  }
+
+  .social__item {
+    margin-right: 11px;
+  }
+
+  .social__svg {
+    &--vk {
+      width: 30px;
+      height: 16px;
+    }
+
+    &--insta {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb {
+      width: 14px;
+      height: 28px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .social {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .social__item {
+    margin-right: 0;
+
+    &:first-child {
+      width: 28px;
+      margin-right: 28px;
+    }
+
+    &:nth-child(2) {
+      width: 23px;
+      margin-right: 28px;
+    }
+
+    &:last-child {
+      width: 14px;
+    }
+  }
+}

@@ -187,18 +187,19 @@
 @media (min-width: $desktop) {
   .plan {
     width: 570px;
+    padding-left: 52px;
 
     &::after {
-      top: 30px;
+      top: 49px;
       right: auto;
-      left: 50px;
+      left: 52px;
 
       width: 100px;
       height: 100px;
     }
 
     &--slim::before {
-      top: 35px;
+      top: 43px;
       right: auto;
       left: 64px;
 
@@ -207,12 +208,12 @@
     }
 
     &--pro::before {
-      top: 35px;
+      top: 70px;
       right: auto;
       left: 34px;
 
-      width: 140px;
-      height: 70px;
+      width: 134px;
+      height: 57px;
     }
   }
 
@@ -220,8 +221,12 @@
     padding-left: 0;
     padding-right: 0;
     padding-top: 0;
-    margin-bottom: 70px;
+    margin-bottom: 72px;
+    margin-left: 161px;
+  }
 
-    text-align: center;
+  .plan__description {
+    margin-bottom: 33px;
+    max-width: none;
   }
 }

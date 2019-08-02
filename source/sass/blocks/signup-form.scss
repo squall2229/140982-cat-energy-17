@@ -11,8 +11,22 @@
   }
 }
 
+.signup-form__wrapper-main-info {
+  margin-bottom: 28px;
+}
+
+.signup-form__wrapper-contact {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.signup-form__wrapper-extra-product {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .signup-form__submit {
-  margin-bottom: 19px;
+  margin-bottom: 23px;
   width: calc(100% - 40px);
   margin-left: auto;
   margin-right: auto;
@@ -29,17 +43,32 @@
 
 @media (min-width: $tablet) {
   .signup-form__group-fields {
-    margin-bottom: 70px;
+    margin-bottom: 65px;
 
     &:first-child {
-      margin-bottom: 70px;
+      margin-bottom: 73px;
     }
+
+    &--extra {
+      margin-bottom: 27px;
+    }
+  }
+
+  .signup-form__tooltip {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .signup-form__wrapper-main-info {
+    padding-bottom: 74px;
   }
 
   .signup-form__wrapper-extra-product {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    padding-left: 70px;
+    padding-right: 70px;
     max-width: 768px;
   }
 
@@ -48,7 +77,7 @@
     padding-right: 70px;
     display: flex;
     max-width: 768px;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
   }
 
@@ -58,10 +87,15 @@
     padding-right: 67px;
     width: auto;
     margin-left: 0;
-    margin-right: 0;
+    margin-right: 61px;
     margin-bottom: 0;
 
     font-size: 20px;
+  }
+
+  .signup-form__wrapper-contact {
+    padding-left: 70px;
+    padding-right: 70px;
   }
 }
 
@@ -71,16 +105,26 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    margin-bottom: 70px;
+    margin-bottom: 0;
+    padding-bottom: 69px;
+    max-width: $container_width_desktop;
+    margin-right: auto;
+    margin-left: auto;
     padding-left: $padding_desktop;
     padding-right: $padding_desktop;
   }
 
   .signup-form__wrapper-extra-product {
-    max-width: none;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $container_width_desktop;
   }
 
   .signup-form__group-fields {
+    margin-bottom: 67px;
+
     &:first-child {
       margin-bottom: 0;
     }
@@ -90,13 +134,20 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $container_width_desktop;
   }
 
   .signup-form__wrapper-submit {
     padding-left: $padding_desktop;
     padding-right: $padding_desktop;
+    max-width: $container_width_desktop;
+    margin-right: auto;
+    margin-left: auto;
     justify-content: flex-start;
-    max-width: none;
   }
 
   .signup-form__submit {

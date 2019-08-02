@@ -22,6 +22,11 @@
 }
 
 @media (min-width: $tablet) {
+  .selection {
+    padding-top: 72px;
+    padding-bottom: 76px;
+  }
+
   .selection__title {
     margin-bottom: 53px;
   }
@@ -29,6 +34,7 @@
   .selection__description {
     padding-left: 70px;
     padding-right: 0;
+    margin-bottom: 67px;
     max-width: 400px;
 
     font-size: 20px;
@@ -37,9 +43,29 @@
 }
 
 @media (min-width: $desktop) {
+  .selection {
+    padding-bottom: 85px;
+    padding-top: 56px;
+  }
+
+  .selection__description-wrapper {
+    padding-left: $padding_desktop;
+    max-width: $container_width_desktop;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   .selection__description {
-    padding-left: 40px;
-    max-width: 450px;
-    margin-bottom: 69px;
+    width: 426px;
+    padding-left: 0;
+    margin-bottom: 66px;
+  }
+
+  .selection__title {
+    margin-bottom: 55px;
+    padding-left: $padding_desktop;
+    max-width: $container_width_desktop;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
