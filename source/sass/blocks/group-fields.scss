@@ -15,6 +15,11 @@
     padding-top: 18px;
     padding-bottom: 20px;
   }
+
+  &--no-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .group-fields__title-container {
@@ -29,9 +34,6 @@
 
 .group-fields__title {
   margin: 0;
-  display: inline-block;
-  max-width: 205px;
-  padding-right: 22px;
 
   font-size: $title_font_size;
   font-family: inherit;
@@ -39,7 +41,17 @@
   color: $black;
   line-height: 24px;
 
-  background-color: #ffffff;
+  span {
+    padding-right: 20px;
+    padding-left: 20px;
+    display: inline-block;
+
+    background-color: #ffffff;
+  }
+}
+
+.group-fields__title-span {
+  max-width: 230px;
 }
 
 .group-fields__field {
@@ -70,6 +82,11 @@
     &--with-padding {
       padding-bottom: 25px;
     }
+
+    &--no-padding {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 
   .group-fields__title-container {
@@ -84,10 +101,18 @@
   }
 
   .group-fields__title {
-    max-width: none;
-
     font-size: 36px;
     line-height: 1;
+
+    padding-left: 33px;
+    padding-right: 33px;
+    max-width: 768px;
+
+    span {
+      padding-left: 37px;
+      padding-right: 37px;
+      max-width: none;
+    }
   }
 
   .group-fields__field {
@@ -113,6 +138,14 @@
 }
 
 @media (min-width: $desktop) {
+  .group-fields__title {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .group-fields__field {
     &--no-margin-bottom {
       margin-bottom: 0;
@@ -177,6 +210,11 @@
 
     &--width-desktop {
       width: 568px;
+    }
+
+    &--no-padding {
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 }

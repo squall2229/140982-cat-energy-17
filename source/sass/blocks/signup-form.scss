@@ -15,6 +15,16 @@
   margin-bottom: 28px;
 }
 
+.signup-form__wrapper-contact {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.signup-form__wrapper-extra-product {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .signup-form__submit {
   margin-bottom: 23px;
   width: calc(100% - 40px);
@@ -57,6 +67,8 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    padding-left: 70px;
+    padding-right: 70px;
     max-width: 768px;
   }
 
@@ -80,6 +92,11 @@
 
     font-size: 20px;
   }
+
+  .signup-form__wrapper-contact {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
 }
 
 @media (min-width: $desktop) {
@@ -99,18 +116,15 @@
 
   .signup-form__wrapper-extra-product {
     max-width: none;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $container_width_desktop;
   }
 
   .signup-form__group-fields {
     margin-bottom: 67px;
-
-    &:not(:first-child) {
-      max-width: $container_width_desktop;
-      margin-right: auto;
-      margin-left: auto;
-      padding-left: $padding_desktop;
-      padding-right: $padding_desktop;
-    }
 
     &:first-child {
       margin-bottom: 0;
@@ -121,6 +135,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $container_width_desktop;
   }
 
   .signup-form__wrapper-submit {
