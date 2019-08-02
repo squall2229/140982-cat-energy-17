@@ -59,30 +59,48 @@
   }
 
   .example__wrapper {
-    padding-top: 71px;
-    padding-bottom: 75px;
-    background-color: $primary_gray;
     position: relative;
 
-    &::after {
-      content: "";
-      bottom: 0;
-      display: block;
-      position: absolute;
-      right: 0;
-      left: auto;
-      height: 462px;
-      width: 25%;
-      background-color: #eaeaea;
-    }
+    background-color: $primary_gray;
+    background-image: linear-gradient(to right, $primary_gray 50%, #eaeaea 50%);
   }
 
   .example__container-center {
+    position: relative;
+
     max-width: $container_width_desktop;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 71px;
+    padding-bottom: 75px;
     padding-left: 40px;
     padding-right: 40px;
+
+    &::before {
+      content: "";
+      z-index: 1;
+      display: block;
+      position: absolute;
+      width: 365px;
+      height: 100%;
+      top: 0;
+      right: 327px;
+
+      background-color: $primary_gray;
+    }
+
+    &::after {
+      content: "";
+      z-index: 1;
+      display: block;
+      position: absolute;
+      width: 271px;
+      height: 100%;
+      top: 0;
+      right: 0;
+
+      background-color: #eaeaea;
+    }
   }
 
   .example__description {
