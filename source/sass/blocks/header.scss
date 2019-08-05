@@ -29,6 +29,11 @@
   }
 }
 
+.header__logo-image {
+  width: 191px;
+  height: 39px;
+}
+
 .header__toggle {
   position: relative;
 
@@ -77,6 +82,11 @@
   .header__logo {
     width: 174px;
   }
+
+  .header__logo-image {
+    width: 174px;
+    height: 59px;
+  }
 }
 
 @media (min-width: $desktop) {
@@ -99,5 +109,10 @@
 
   .header__logo {
     width: 203px;
+  }
+
+  .header__logo-image {
+    width: 203px;
+    height: 60px;
   }
 }

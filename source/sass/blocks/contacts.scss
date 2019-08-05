@@ -89,11 +89,17 @@
 }
 
 @media (min-width: $desktop) {
-  .contacts__address {
-    position: absolute;
-    top: 92px;
-    left: 40px;
+  .contacts__address-container {
+    width: 100%;
+    max-width: $container_width_desktop;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $padding_desktop;
+    padding-right: $padding_desktop;
+    padding-top: 92px;
+  }
 
+  .contacts__address {
     padding-left: 76px;
     padding-right: 90px;
     padding-top: 65px;
