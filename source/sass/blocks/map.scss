@@ -8,6 +8,11 @@
 
   background-image: url("../img/bg-map-mobile@1x.png");
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.png");
+    background-size: cover;
+  }
+
   &::after {
     position: absolute;
     top: 139px;
@@ -41,6 +46,10 @@
 
     background-image: url("../img/bg-map-tablet@1x.png");
 
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.png");
+    }
+
     &::after {
       width: 113px;
       height: 106px;
@@ -61,6 +70,10 @@
     left: 0;
 
     background-image: url("../img/bg-map-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.png");
+    }
 
     &::after {
       top: 150px;
