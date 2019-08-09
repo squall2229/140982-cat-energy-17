@@ -98,6 +98,14 @@
 }
 
 @media (min-width: $tablet) {
+  .results__item {
+    margin-right: 42px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
   .results__info {
     @include paddingMobile;
 
