@@ -67,7 +67,7 @@
   font-family: $arial_font;
   font-size: $primary_font_size;
   font-weight: 300;
-  line-height: 1.5;
+  line-height: 1.29;
   color: $primary_text;
 
   border-bottom: 1px solid $dark_gray;
@@ -79,8 +79,8 @@
   position: relative;
 
   display: inline-block;
-  padding-top: 19px;
-  padding-bottom: 20px;
+  padding-top: 18px;
+  padding-bottom: 18px;
 
   border: none;
   background-color: transparent;
@@ -121,8 +121,8 @@
 
 @media (min-width: $tablet) {
   .plan {
-    padding-top: 76px;
-    padding-left: 55px;
+    padding-top: 75px;
+    padding-left: 53px;
     padding-right: 0;
     padding-bottom: 60px;
     width: 708px;
@@ -164,12 +164,17 @@
   }
 
   .plan__description {
-    max-width: 372px;
+    max-width: 342px;
     padding-bottom: 0;
     margin-bottom: 56px;
 
     font-size: 16px;
+    line-height: 1.5;
     border-bottom: none;
+
+    &--slim {
+      max-width: 372px;
+    }
   }
 
   .plan__button {

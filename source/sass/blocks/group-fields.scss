@@ -30,6 +30,10 @@
   &--green {
     @include greenLine;
   }
+
+  &::before {
+    top: 36%;
+  }
 }
 
 .group-fields__title {
@@ -51,7 +55,7 @@
 }
 
 .group-fields__title-span {
-  max-width: 230px;
+  max-width: 221px;
 }
 
 .group-fields__field {
@@ -97,6 +101,10 @@
 
     &--checkboxes {
       margin-bottom: 56px;
+    }
+
+    &::before {
+      top: 60%;
     }
   }
 

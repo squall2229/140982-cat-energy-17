@@ -114,7 +114,7 @@
     width: 100%;
     max-width: $container_width_desktop;
     justify-content: space-between;
-    margin-bottom: 102px;
+    margin-bottom: 107px;
   }
 
   .results__cost {
@@ -252,6 +252,8 @@
 
   .results__cat-image-container {
     position: relative;
+    top: -21px;
+    left: 8px;
 
     width: 50%;
     height: 500px;
@@ -276,6 +278,9 @@
   }
 
   .results__cat-image-container {
+    top: -10px;
+    left: -16px;
+    
     &:first-child {
       width: 365px;
     }
