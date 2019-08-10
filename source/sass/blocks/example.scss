@@ -14,7 +14,8 @@
 .example__description {
   @include paddingMobile;
   @include paragraph;
-
+ 
+  padding-right: 25px;
   margin: 0;
   margin-bottom: 26px;
 
@@ -39,6 +40,7 @@
 
   .example__description {
     margin-bottom: 52px;
+    padding-right: 40px;
 
     font-size: $large_font_size;
     line-height: 1.5;
@@ -104,7 +106,7 @@
   }
 
   .example__description {
-    max-width: 430px;
+    max-width: 432px;
     padding-right: 0;
     margin-bottom: 68px;
     padding-left: 0;
