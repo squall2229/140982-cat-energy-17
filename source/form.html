@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Кэт энерджи | Подбор программы</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.min.css">
   </head>
   <body>
     <!-- Header -->
@@ -12,10 +12,10 @@
       <div class="header__container">
         <div class="header__logo-container">
           <a class="header__logo" href="index.html">
-            <picture class="header__logo-image">
-              <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg" />
-              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg" />
-              <img src="img/logo-mobile.svg" width="191" height="39" alt="Cat Energy логотип" />
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Cat Energy логотип">
             </picture>
           </a>
           <button class="header__toggle header__toggle--nojs" type="button">
@@ -47,12 +47,7 @@
             программу питания для вашего кота
           </p>
         </div>
-        <form
-          class="selection__form signup-form"
-          name="signup-form"
-          method="post"
-          action="https://echo.htmlacademy.ru"
-        >
+        <form class="selection__form signup-form" name="signup-form" method="post" action="https://echo.htmlacademy.ru">
           <div class="signup-form__wrapper-main-info">
             <fieldset class="signup-form__group-fields group-fields group-fields--no-main-padding group-fields--width-desktop">
               <legend class="group-fields__title visually-hidden">
@@ -60,15 +55,15 @@
               </legend>
               <div class="group-fields__field field">
                 <label class="field__label field__label--margin-right" for="name">Имя:*</label>
-                <input class="field__input" name="name" type="text" id="name" placeholder="Барсик" />
+                <input class="field__input" name="name" type="text" id="name" placeholder="Барсик">
               </div>
               <div class="group-fields__field field">
                 <label class="field__label field__label--margin-right" for="weight">Вес (кг):*</label>
-                <input class="field__input" name="weight" type="text" id="weight" placeholder="7" />
+                <input class="field__input" name="weight" type="text" id="weight" placeholder="7">
               </div>
               <div class="group-fields__field field">
                 <label class="field__label field__label--margin-right" for="age">Возраст (лет):</label>
-                <input class="field__input" name="age" type="number" id="age" placeholder="7" />
+                <input class="field__input" name="age" type="number" id="age" placeholder="7">
               </div>
             </fieldset>
             <fieldset class="signup-form__group-fields group-fields group-fields--width-desktop group-fields--border group-fields--with-padding">
@@ -76,26 +71,24 @@
                 Выбор программы
               </legend>
               <div class="group-fields__field group-fields__field--radio field">
-                <input class="field__radio visually-hidden" name="program-types" type="radio" id="slimming" />
+                <input class="field__radio visually-hidden" name="program-types" type="radio" id="slimming">
                 <label class="field__radio-control" for="slimming"></label>
                 <label class="field__label" for="slimming">Похудение</label>
               </div>
               <div class="group-fields__field group-fields__field--radio field">
-                <input class="field__radio visually-hidden" name="program-types" type="radio" id="gain-weight" />
+                <input class="field__radio visually-hidden" name="program-types" type="radio" id="gain-weight">
                 <label class="field__radio-control" for="gain-weight"></label>
                 <label class="field__label" for="gain-weight">Набор массы</label>
               </div>
               <div class="group-fields__field group-fields__field--radio field">
-                <input class="field__radio visually-hidden" name="program-types" type="radio" id="not-know" />
+                <input class="field__radio visually-hidden" name="program-types" type="radio" id="not-know">
                 <label class="field__radio-control" for="not-know"></label>
                 <label class="field__label" for="not-know">Не знаю (Нужен ваш совет)</label>
               </div>
             </fieldset>
           </div>
           <fieldset class="signup-form__group-fields group-fields group-fields--no-padding">
-            <legend
-              class="group-fields__title-container group-fields__title-container--green"
-            >
+            <legend class="group-fields__title-container group-fields__title-container--green">
               <div class="group-fields__title">
                 <span class="group-fields__title-span group-fields__title-span--max-width">Контактные данные (владельца кота)</span>
               </div>
@@ -103,19 +96,16 @@
             <div class="signup-form__wrapper-contact">
               <div class="group-fields__field group-fields__field--width-desktop group-fields__field--no-margin-bottom field">
                 <label class="field__label field__label--margin-right" for="email">E-mail:*</label>
-                <input class="field__input field__input--email" name="email" type="email" id="email"
-                  placeholder="kuklachev@gmail.com" />
+                <input class="field__input field__input--email" name="email" type="email" id="email" placeholder="kuklachev@gmail.com">
               </div>
               <div class="group-fields__field field group-fields__field--width-desktop">
                 <label class="field__label field__label--margin-right" for="phone">Телефон:*</label>
-                <input class="field__input field__input--phone" name="phone" type="tel" id="phone" placeholder="8 (960) 900-60-90" />
+                <input class="field__input field__input--phone" name="phone" type="tel" id="phone" placeholder="8 (960) 900-60-90">
               </div>
             </div>
           </fieldset>
           <fieldset class="signup-form__group-fields group-fields group-fields--no-padding">
-            <legend
-              class="group-fields__title-container group-fields__title-container--green"
-            >
+            <legend class="group-fields__title-container group-fields__title-container--green">
               <div class="group-fields__title"><span>Комментарий</span></div>
             </legend>
             <div class="signup-form__wrapper-contact">
@@ -125,29 +115,27 @@
             </div>
           </fieldset>
           <fieldset class="signup-form__group-fields signup-form__group-fields--extra group-fields group-fields--no-padding">
-            <legend
-              class="group-fields__title-container group-fields__title-container--checkboxes group-fields__title-container--green"
-            >
+            <legend class="group-fields__title-container group-fields__title-container--checkboxes group-fields__title-container--green">
               <div class="group-fields__title"><span>Дополнительно</span></div>
             </legend>
             <div class="signup-form__wrapper-extra-product">
               <div class="group-fields__field group-fields__field--extra field field--extra">
-                <input class="field__checkbox visually-hidden" name="sweetener" type="checkbox" id="sweetener" checked />
+                <input class="field__checkbox visually-hidden" name="sweetener" type="checkbox" id="sweetener" checked="">
                 <label class="field__checkbox-control" for="sweetener"></label>
                 <label class="field__label field__label--extra" for="sweetener">Сахарозаменитель</label>
               </div>
               <div class="group-fields__field group-fields__field--extra field field--extra">
-                <input class="field__checkbox visually-hidden" name="water" type="checkbox" id="water" />
+                <input class="field__checkbox visually-hidden" name="water" type="checkbox" id="water">
                 <label class="field__checkbox-control" for="water"></label>
                 <label class="field__label field__label--extra" for="water">Питьевая вода</label>
               </div>
               <div class="group-fields__field group-fields__field--extra field field--extra">
-                <input class="field__checkbox visually-hidden" name="milk" type="checkbox" id="milk" />
+                <input class="field__checkbox visually-hidden" name="milk" type="checkbox" id="milk">
                 <label class="field__checkbox-control" for="milk"></label>
                 <label class="field__label field__label--extra" for="milk">Молоко</label>
               </div>
               <div class="group-fields__field group-fields__field--extra field field--extra">
-                <input class="field__checkbox visually-hidden" name="vitamins" type="checkbox" id="vitamins" />
+                <input class="field__checkbox visually-hidden" name="vitamins" type="checkbox" id="vitamins">
                 <label class="field__checkbox-control" for="vitamins"></label>
                 <label class="field__label field__label--extra" for="vitamins">Витамины</label>
               </div>
@@ -173,8 +161,8 @@
                 Приглашаем к&nbsp;сотрудничеству дилеров!
               </p>
               <p class="contacts__text">
-                ул. Большая <br />
-                Конюшенная, д. 19/8 <br />
+                ул. Большая <br>
+                Конюшенная, д. 19/8 <br>
                 <span class="contacts__text-town">Санкт-Петербург</span>
               </p>
             </div>
@@ -183,31 +171,31 @@
           </div>
           <div class="footer__container">
             <h2 class="contacts__title">
-              <img class="contacts__title-img" src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy" />
+              <img class="contacts__title-img" src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
             </h2>
           <ul class="social">
             <li class="social__item social__item">
               <a class="social__link" href="#"><span class="visually-hidden">Вконтакте</span>
-                <svg role="img" title="Вконтакте" class="social__svg social__svg--vk"><use xlink:href="img/sprite.svg#vk"></use></svg>
+                <svg role="img" title="Вконтакте" class="social__svg social__svg--vk"><use xlink:href="img/sprite.svg#icon-vk"></use></svg>
               </a>
             </li>
             <li class="social__item social__item">
               <a class="social__link" href="#">
                 <span class="visually-hidden">Инстаграм</span>
-                <svg role="img" title="Инстаграм" class="social__svg social__svg--insta"><use xlink:href="img/sprite.svg#insta"></use></svg>
+                <svg role="img" title="Инстаграм" class="social__svg social__svg--insta"><use xlink:href="img/sprite.svg#icon-insta"></use></svg>
               </a>
             </li>
             <li class="social__item social__item">
               <a class="social__link" href="#">
                 <span class="visually-hidden">Фейсбук</span>
-                <svg role="img" title="Фейсбук" class="social__svg social__svg--fb"><use xlink:href="img/sprite.svg#fb"></use></svg>
+                <svg role="img" title="Фейсбук" class="social__svg social__svg--fb"><use xlink:href="img/sprite.svg#icon-fb"></use></svg>
               </a>
             </li>
           </ul>
           <div class="footer__copyright copyright">
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
               <span>HTML Academy</span>
-              <svg role="img" title="HTML Academy" width="27" height="34" class="copyright__logo"><use xlink:href="img/sprite.svg#logo"></use></svg>
+              <svg role="img" title="HTML Academy" width="27" height="34" class="copyright__logo"><use xlink:href="img/sprite.svg#icon-logo"></use></svg>
             </a>
           </div>
         </div>
@@ -215,8 +203,7 @@
       </footer>
       <script src="./js/svg4everybody.min.js"></script>
       <script>svg4everybody();</script>
-      <script
-        src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=920b0c0f-0e04-4b91-88c7-ad03195812bf" type="text/javascript"></script>
+      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=920b0c0f-0e04-4b91-88c7-ad03195812bf" type="text/javascript"></script>
       <script src="./js/map.js"></script>
       <script src="./js/picturefill.min.js"></script>
       <script src="./js/menu.js"></script>

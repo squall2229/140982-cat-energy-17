@@ -23,7 +23,7 @@
 
 @media (min-width: $tablet) {
   .selection {
-    padding-top: 72px;
+    padding-top: 56px;
     padding-bottom: 76px;
   }
 
@@ -44,8 +44,8 @@
 
 @media (min-width: $desktop) {
   .selection {
-    padding-bottom: 85px;
-    padding-top: 56px;
+    padding-bottom: 84px;
+    padding-top: 72px;
   }
 
   .selection__description-wrapper {
@@ -56,7 +56,7 @@
   }
 
   .selection__description {
-    width: 426px;
+    max-width: 380px;
     padding-left: 0;
     margin-bottom: 66px;
   }
