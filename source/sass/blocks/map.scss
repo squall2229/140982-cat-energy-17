@@ -27,8 +27,13 @@
     background-position: center;
     width: 55px;
     height: 53px;
+    z-index: 1;
 
     content: "";
+  }
+
+  ymaps {
+    z-index: 2;
   }
 }
 
