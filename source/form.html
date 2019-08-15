@@ -33,7 +33,7 @@
               <a class="menu__link menu__link--black" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link menu__link--black" href="form.html">Подбор программы</a>
+              <a class="menu__link menu__link--black menu__link--active" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </nav>
@@ -52,9 +52,9 @@
         <form class="selection__form signup-form" name="signup-form" method="post" action="https://echo.htmlacademy.ru">
           <div class="signup-form__wrapper-main-info">
             <fieldset class="signup-form__group-fields group-fields group-fields--no-main-padding group-fields--width-desktop">
-              <legend class="group-fields__title visually-hidden">
+              <div class="group-fields__title visually-hidden">
                 Основная информация
-              </legend>
+              </div>
               <div class="group-fields__field field">
                 <label class="field__label field__label--margin-right" for="name">Имя:*</label>
                 <input class="field__input" name="name" type="text" id="name" placeholder="Барсик">
@@ -69,11 +69,11 @@
               </div>
             </fieldset>
             <fieldset class="signup-form__group-fields group-fields group-fields--width-desktop group-fields--border group-fields--with-padding">
-              <legend class="group-fields__title visually-hidden">
+              <div class="group-fields__title visually-hidden">
                 Выбор программы
-              </legend>
+              </div>
               <div class="group-fields__field group-fields__field--radio field">
-                <input class="field__radio visually-hidden" name="program-types" type="radio" id="slimming">
+                <input class="field__radio visually-hidden" name="program-types" type="radio" id="slimming" checked>
                 <label class="field__radio-control" for="slimming"></label>
                 <label class="field__label" for="slimming">Похудение</label>
               </div>
@@ -90,11 +90,11 @@
             </fieldset>
           </div>
           <fieldset class="signup-form__group-fields group-fields group-fields--no-padding">
-            <legend class="group-fields__title-container group-fields__title-container--green">
-              <div class="group-fields__title">
+            <div class="group-fields__title-container group-fields__title-container--green">
+              <p class="group-fields__title">
                 <span class="group-fields__title-span group-fields__title-span--max-width">Контактные данные (владельца кота)</span>
-              </div>
-            </legend>
+              </p>
+            </div>
             <div class="signup-form__wrapper-contact">
               <div class="group-fields__field group-fields__field--width-desktop group-fields__field--no-margin-bottom field">
                 <label class="field__label field__label--margin-right" for="email">E-mail:*</label>
@@ -107,9 +107,9 @@
             </div>
           </fieldset>
           <fieldset class="signup-form__group-fields group-fields group-fields--no-padding">
-            <legend class="group-fields__title-container group-fields__title-container--green">
+            <div class="group-fields__title-container group-fields__title-container--green">
               <div class="group-fields__title"><span>Комментарий</span></div>
-            </legend>
+            </div>
             <div class="signup-form__wrapper-contact">
               <div class="group-fields__field field">
                 <textarea class="field__textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
@@ -117,9 +117,9 @@
             </div>
           </fieldset>
           <fieldset class="signup-form__group-fields signup-form__group-fields--extra group-fields group-fields--no-padding">
-            <legend class="group-fields__title-container group-fields__title-container--checkboxes group-fields__title-container--green">
+            <div class="group-fields__title-container group-fields__title-container--checkboxes group-fields__title-container--green">
               <div class="group-fields__title"><span>Дополнительно</span></div>
-            </legend>
+            </div>
             <div class="signup-form__wrapper-extra-product">
               <div class="group-fields__field group-fields__field--extra field field--extra">
                 <input class="field__checkbox visually-hidden" name="sweetener" type="checkbox" id="sweetener" checked="">
@@ -175,37 +175,37 @@
             <h2 class="contacts__title">
               <img class="contacts__title-img" src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
             </h2>
-          <ul class="social">
-            <li class="social__item social__item">
-              <a class="social__link" href="#"><span class="visually-hidden">Вконтакте</span>
-                <svg role="img" title="Вконтакте" class="social__svg social__svg--vk"><use xlink:href="img/sprite.svg#icon-vk"></use></svg>
+            <ul class="social">
+              <li class="social__item social__item">
+                <a class="social__link" href="#"><span class="visually-hidden">Вконтакте</span>
+                  <svg class="social__svg social__svg--vk" width="22" height="12" role="img"><use xlink:href="img/sprite.svg#icon-vk"></use></svg>
+                </a>
+              </li>
+              <li class="social__item social__item">
+                <a class="social__link" href="#">
+                  <span class="visually-hidden">Инстаграм</span>
+                  <svg role="img" class="social__svg social__svg--insta" width="16" height="16"><use xlink:href="img/sprite.svg#icon-insta"></use></svg>
+                </a>
+              </li>
+              <li class="social__item social__item">
+                <a class="social__link" href="#">
+                  <span class="visually-hidden">Фейсбук</span>
+                  <svg role="img" class="social__svg social__svg--fb" width="10" height="19"><use xlink:href="img/sprite.svg#icon-fb"></use></svg>
+                </a>
+              </li>
+            </ul>
+            <div class="footer__copyright copyright">
+              <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+                <span>HTML Academy</span>
+                <svg role="img" class="copyright__logo" width="27" height="34"><use xlink:href="img/sprite.svg#icon-logo"></use></svg>
               </a>
-            </li>
-            <li class="social__item social__item">
-              <a class="social__link" href="#">
-                <span class="visually-hidden">Инстаграм</span>
-                <svg role="img" title="Инстаграм" class="social__svg social__svg--insta"><use xlink:href="img/sprite.svg#icon-insta"></use></svg>
-              </a>
-            </li>
-            <li class="social__item social__item">
-              <a class="social__link" href="#">
-                <span class="visually-hidden">Фейсбук</span>
-                <svg role="img" title="Фейсбук" class="social__svg social__svg--fb"><use xlink:href="img/sprite.svg#icon-fb"></use></svg>
-              </a>
-            </li>
-          </ul>
-          <div class="footer__copyright copyright">
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <span>HTML Academy</span>
-              <svg role="img" title="HTML Academy" width="27" height="34" class="copyright__logo"><use xlink:href="img/sprite.svg#icon-logo"></use></svg>
-            </a>
+            </div>
           </div>
-        </div>
         </section>
       </footer>
       <script src="./js/svg4everybody.min.js"></script>
       <script>svg4everybody();</script>
-      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=920b0c0f-0e04-4b91-88c7-ad03195812bf" type="text/javascript"></script>
+      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=920b0c0f-0e04-4b91-88c7-ad03195812bf"></script>
       <script src="./js/map.js"></script>
       <script src="./js/picturefill.min.js"></script>
       <script src="./js/menu.js"></script>
