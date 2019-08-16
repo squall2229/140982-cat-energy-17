@@ -9,7 +9,7 @@ function init () {
 
   var placemark = new ymaps.Placemark([59.938631, 30.323055], {}, {
     iconLayout: 'default#image',
-    iconImageHref: '../img/map-pin.png',
+    iconImageHref: 'img/map-pin.png',
     iconImageSize: [55, 53]
   });
 
