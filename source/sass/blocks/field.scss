@@ -179,6 +179,11 @@
     width: 40px;
     height: 40px;
     margin-right: 20px;
+
+    &::after {
+      width: 18px;
+      height: 18px;
+    }
   }
 
   .field__textarea {
