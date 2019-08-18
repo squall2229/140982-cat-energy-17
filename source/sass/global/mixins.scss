@@ -76,19 +76,19 @@
 
 @mixin inputStates {
   &:hover {
-    border: solid 1px $medium_gray;
+    outline: solid 1px $medium_gray;
   }
 
   &:focus {
-    border: solid 2px $primary_text;
-  }
-
-  &:invalid {
-    border: solid 2px $orange;
+    outline: solid 2px $primary_text;
   }
 
   &:disabled {
     opacity: 0.3;
+  }
+
+  &:invalid:not([value=""]):not(:placeholder-shown) {
+    outline: solid 2px $orange;
   }
 
   &::placeholder {

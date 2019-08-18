@@ -19,6 +19,9 @@
 }
 
 .promo__intro {
+  position: relative;
+  z-index: 2;
+
   margin: 0;
 
   text-align: center;

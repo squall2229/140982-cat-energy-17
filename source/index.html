@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="preload" href="./fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.min.css">
   </head>
   <body>
@@ -181,37 +183,37 @@
           <h2 class="contacts__title">
             <img class="contacts__title-img" src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
           </h2>
-        <ul class="social">
-          <li class="social__item social__item">
-            <a class="social__link" href="#"><span class="visually-hidden">Вконтакте</span>
-              <svg role="img" title="Вконтакте" class="social__svg social__svg--vk"><use xlink:href="img/sprite.svg#icon-vk"></use></svg>
+          <ul class="social">
+            <li class="social__item social__item">
+              <a class="social__link" href="#"><span class="visually-hidden">Вконтакте</span>
+                <svg class="social__svg social__svg--vk" width="22" height="12" role="img"><use xlink:href="img/sprite.svg#icon-vk"></use></svg>
+              </a>
+            </li>
+            <li class="social__item social__item">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Инстаграм</span>
+                <svg role="img" class="social__svg social__svg--insta" width="16" height="16"><use xlink:href="img/sprite.svg#icon-insta"></use></svg>
+              </a>
+            </li>
+            <li class="social__item social__item">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Фейсбук</span>
+                <svg role="img" class="social__svg social__svg--fb" width="10" height="19"><use xlink:href="img/sprite.svg#icon-fb"></use></svg>
+              </a>
+            </li>
+          </ul>
+          <div class="footer__copyright copyright">
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <span>HTML Academy</span>
+              <svg role="img" class="copyright__logo" width="27" height="34"><use xlink:href="img/sprite.svg#icon-logo"></use></svg>
             </a>
-          </li>
-          <li class="social__item social__item">
-            <a class="social__link" href="#">
-              <span class="visually-hidden">Инстаграм</span>
-              <svg role="img" title="Инстаграм" class="social__svg social__svg--insta"><use xlink:href="img/sprite.svg#icon-insta"></use></svg>
-            </a>
-          </li>
-          <li class="social__item social__item">
-            <a class="social__link" href="#">
-              <span class="visually-hidden">Фейсбук</span>
-              <svg role="img" title="Фейсбук" class="social__svg social__svg--fb"><use xlink:href="img/sprite.svg#icon-fb"></use></svg>
-            </a>
-          </li>
-        </ul>
-        <div class="footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <span>HTML Academy</span>
-            <svg role="img" title="HTML Academy" width="27" height="34" class="copyright__logo"><use xlink:href="img/sprite.svg#icon-logo"></use></svg>
-          </a>
+          </div>
         </div>
-      </div>
       </section>
     </footer>
     <script src="./js/svg4everybody.min.js"></script>
     <script>svg4everybody();</script>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=920b0c0f-0e04-4b91-88c7-ad03195812bf" type="text/javascript"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=920b0c0f-0e04-4b91-88c7-ad03195812bf"></script>
     <script src="./js/map.js"></script>
     <script src="./js/picturefill.min.js"></script>
     <script src="./js/menu.js"></script>

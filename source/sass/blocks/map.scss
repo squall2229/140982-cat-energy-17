@@ -7,10 +7,15 @@
   height: 362px;
 
   background-image: url("../img/bg-map-mobile@1x.png");
+  background-size: contain;
+  background-position: center;
+
+  *[class^="ymaps-"] {
+    z-index: 2;
+  }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-map-mobile@2x.png");
-    background-size: cover;
   }
 
   &::after {
@@ -26,8 +31,9 @@
     background-position: center;
     width: 55px;
     height: 53px;
+    z-index: 1;
 
-    // content: "";
+    content: "";
   }
 }
 
@@ -41,7 +47,6 @@
 
 @media (min-width: $tablet) {
   .map {
-    // width: 768px;
     height: 400px;
 
     background-image: url("../img/bg-map-tablet@1x.png");
