@@ -83,12 +83,12 @@
     outline: solid 2px $primary_text;
   }
 
-  &:invalid {
-    outline: solid 2px $orange;
-  }
-
   &:disabled {
     opacity: 0.3;
+  }
+
+  &:invalid:not([value=""]):not(:placeholder-shown) {
+    outline: solid 2px $orange;
   }
 
   &::placeholder {
