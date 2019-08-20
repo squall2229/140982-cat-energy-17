@@ -123,7 +123,15 @@
   }
 
   .signup-form__group-fields {
-    margin-bottom: 67px;
+    margin-bottom: 70px;
+
+    &--comment {
+      margin-bottom: 65px;
+    }
+
+    &--extra {
+      margin-bottom: 59px;
+    }
 
     &:first-child {
       margin-bottom: 0;

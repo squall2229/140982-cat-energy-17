@@ -4,7 +4,7 @@
   position: relative;
   z-index: 3;
 
-  padding-top: 27px;
+  padding-top: 24px;
   padding-bottom: 26px;
   display: flex;
   justify-content: space-between;
@@ -106,6 +106,10 @@
     padding-top: 65px;
     padding-bottom: 62px;
     width: 570px;
+
+    &--gray {
+      background-color: #ffffff;
+    }
   }
 
   .contacts__text {

@@ -154,6 +154,12 @@
     padding-right: 0;
   }
 
+  .group-fields__title-container {
+    &--checkboxes {
+      margin-bottom: 55px;
+    }
+  }
+
   .group-fields__field {
     &--no-margin-bottom {
       margin-bottom: 0;
