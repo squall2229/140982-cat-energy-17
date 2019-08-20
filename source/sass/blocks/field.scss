@@ -148,6 +148,10 @@
   opacity: 1;
 }
 
+.field__radio:active + .field__radio-control {
+  box-shadow: 0 0 2px 2px $primary_green, 0px 4px 5px 0 rgba(0, 0, 0, 0.3);
+}
+
 .field__radio:disabled + .field__radio-control,
 .field__checkbox:disabled + .field__checkbox-control,
 .field__radio:disabled ~ .field__label,

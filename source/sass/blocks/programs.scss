@@ -108,6 +108,7 @@
   .programs__list {
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
     justify-content: space-between;
     max-width: $container_width_desktop;
     margin-left: auto;
